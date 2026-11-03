@@ -37,7 +37,7 @@
     details > summary::-webkit-details-marker { display: none; }
     details[open] .details-plus { transform: rotate(45deg); }
     .details-plus { transition: transform .2s; }
-    .form-shell { background: #191918; border: 1px solid #ffffff26; padding: 24px; }
+    .form-shell { background: transparent; border: 0; padding: 0; }
     .form-shell [data-form-frame], .form-shell iframe { width: 100%; }
     .footer-wordmark { font-size: clamp(70px, 16.5vw, 225px); line-height: .8; letter-spacing: -.025em; color: #25251f; white-space: nowrap; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
