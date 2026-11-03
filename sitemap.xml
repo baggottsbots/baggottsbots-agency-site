@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://baggottsbots.github.io/baggottsbots-agency-site/contact/</loc>
+    <loc>https://baggottsbots.com/</loc>
+    <lastmod>2026-11-03T04:59:18.527Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/contact/</loc>
     <lastmod>2026-11-03T04:47:14.966Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://baggottsbots.github.io/baggottsbots-agency-site/services/</loc>
+    <loc>https://baggottsbots.com/services/</loc>
     <lastmod>2026-11-03T04:47:03.990Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.github.io/baggottsbots-agency-site/</loc>
-    <lastmod>2026-11-03T04:46:38.066Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
