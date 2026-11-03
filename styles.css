@@ -20,6 +20,7 @@
     .icon { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
     .nav-link { font-size: 11px; font-weight: 600; color: #bdbdb3; transition: color .2s; }
     .nav-link:hover, .nav-link[aria-current="location"] { color: var(--gold); }
+    .scroll-progress { position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; transform-origin: left center; transform: scaleX(0); background: linear-gradient(90deg, #FF00D4, #8A2BFF 55%, #2D5BFF); pointer-events: none; }
     .hero-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 40px; }
     .hero-art { position: relative; min-height: 530px; isolation: isolate; }
     .hero-art::before { content: ''; position: absolute; inset: 3% -10% -5%; z-index: -2; background: radial-gradient(ellipse, #8A2BFF30 0%, transparent 63%); }
@@ -32,8 +33,19 @@
     .service-card:hover { border-color: #FF00D480; background: #1c1520; transform: translateY(-5px); }
     .service-card .service-arrow { transition: transform .2s; }
     .service-card:hover .service-arrow { transform: translate(3px, -3px); }
-    .portrait { width: 100%; height: 530px; object-fit: cover; object-position: center; filter: grayscale(100%); }
+    .service-card .service-link { transition: color .2s; }
+    .service-card .service-link:hover { color: #f2f0e8; }
+
+    /* Portrait: desktop shows the full cutout, tablet and phone fill a tall frame with the head anchored at the top */
+    .portrait-frame { position: relative; overflow: hidden; }
+    .portrait { display: block; width: 100%; height: auto; min-height: 460px; object-fit: contain; object-position: bottom center; transform-origin: bottom center; filter: drop-shadow(0 20px 40px #000000aa) drop-shadow(0 6px 14px #8A2BFF40); }
+    .about-badge { will-change: transform; }
+
     .proof-card { border-top: 1px solid #47463c; padding-top: 28px; }
+    .area-card { border: 1px solid #ffffff1a; padding: 22px; transition: border-color .25s, background .25s, transform .25s; }
+    .area-card:hover { border-color: #FF00D480; background: #1c1520; transform: translateY(-4px); }
+    .area-card a { color: #f2f0e8; border-bottom: 1px solid #FF00D466; transition: color .2s, border-color .2s; }
+    .area-card a:hover { color: var(--gold); border-color: var(--gold); }
     details > summary { list-style: none; cursor: pointer; }
     details > summary::-webkit-details-marker { display: none; }
     details[open] .details-plus { transform: rotate(45deg); }
@@ -51,20 +63,22 @@
     @media (min-width: 1024px) { #mobile-menu { display: none !important; } }
     @media (max-width: 1023px) {
       .hero-grid { gap: 10px; }
-      #about .portrait { height: auto !important; min-height: 420px; }
       .hero-art { transform: scale(.85); transform-origin: center; margin-inline: -30px; }
       .hero-monogram { font-size: 310px; }
-      .portrait { height: 460px; }
+      .portrait { height: 600px; min-height: 0; object-fit: cover; object-position: top center; }
     }
     @media (max-width: 767px) {
       .container-wide { width: calc(100% - 40px); }
-      #about .portrait { min-height: 520px !important; height: auto !important; }
       .hero-grid { grid-template-columns: 1fr; }
       .hero-art { min-height: 440px; transform: scale(.9); margin: -10px -10px -30px; }
       .orbit { width: 325px; height: 325px; top: 40px; }
       .hero-monogram { top: 40px; font-size: 290px; }
-      .portrait { height: 430px; }
+      .portrait { height: 600px; }
       .service-card { padding: 26px; }
+      .area-card { padding: 20px; }
+    }
+    @media (max-width: 400px) {
+      .portrait { height: 560px; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto !important; }
