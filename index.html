@@ -8,7 +8,7 @@
   
   
   <meta name="author" content="Ryan Baggott">
-  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="geo.region" content="US-SC">
   <meta name="geo.placename" content="Bluffton, South Carolina">
   <meta name="geo.position" content="32.2440;-80.8615">
@@ -24,11 +24,12 @@
   
   <meta property="og:locale" content="en_US">
   
+  <meta name="twitter:site" content="@PayMeGPT">
   
   
   
 
-  <link rel="icon" href="https://paymegpt.com/objects/quick-uploads/2/fd458ba8be29aaa9.jpg">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -50,17 +51,22 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["ProfessionalService", "LocalBusiness", "MarketingAgency"],
+        "@type": ["ProfessionalService", "LocalBusiness"],
         "@id": "https://paymegpt.com/p/mw6iaP#business",
         "name": "BaggottsBOTs Digital Marketing Agency",
-        "alternateName": ["BaggottsBOTs", "BaggottsBOTs Digital Marketing"],
-        "description": "BaggottsBOTs Digital Marketing Agency is a digital marketing agency based in Bluffton, South Carolina, serving Beaufort County and Hilton Head Island. Services include social media management, video production and editing, paid social advertising, conversion-focused landing pages, and AI chatbots and automation for lead capture and follow-up.",
+        "alternateName": ["BaggottsBOTs", "BaggottsBOTs Digital Marketing", "Baggotts Bots"],
+        "slogan": "Marketing that hits different.",
+        "description": "BaggottsBOTs Digital Marketing Agency is a digital marketing agency based in Bluffton, South Carolina, serving Hilton Head Island, Beaufort and all of Beaufort County. Services include video production and editing, social media management, paid social advertising on Facebook and Instagram, conversion-focused landing pages, and AI chatbots and automation for lead capture and follow-up.",
         "url": "https://paymegpt.com/p/mw6iaP",
-        "image": "https://paymegpt.com/objects/quick-uploads/2/94d42141aaed4254.jpg",
-        "logo": "https://paymegpt.com/objects/quick-uploads/2/fd458ba8be29aaa9.jpg",
+        "image": { "@id": "https://paymegpt.com/p/mw6iaP#heroimage" },
+        "logo": { "@id": "https://paymegpt.com/p/mw6iaP#logo" },
+        "telephone": "+1-844-960-3097",
         "email": "ryan@baggottsbots.com",
         "priceRange": "$$",
+        "currenciesAccepted": "USD",
+        "paymentAccepted": "Credit card, ACH, invoice",
         "founder": { "@id": "https://paymegpt.com/p/mw6iaP#founder" },
+        "parentOrganization": { "@type": "Organization", "name": "Tap The Table LLC" },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Bluffton",
@@ -70,25 +76,26 @@
         },
         "geo": { "@type": "GeoCoordinates", "latitude": 32.2440, "longitude": -80.8615 },
         "areaServed": [
-          { "@type": "City", "name": "Bluffton", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
-          { "@type": "City", "name": "Hilton Head Island", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
-          { "@type": "City", "name": "Beaufort", "containedInPlace": { "@type": "State", "name": "South Carolina" } },
-          { "@type": "AdministrativeArea", "name": "Beaufort County, South Carolina" },
-          { "@type": "AdministrativeArea", "name": "Lowcountry, South Carolina" }
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-bluffton" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-hilton-head" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" }
         ],
-        "knowsAbout": ["Digital marketing", "Digital marketing agency", "Social media marketing", "Video production", "Video editing", "Paid social advertising", "Facebook ads", "Instagram ads", "Landing page design", "AI chatbots", "Marketing automation", "Lead follow-up automation", "Small business marketing"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Digital marketing, video and AI automation services",
-          "itemListElement": [
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Management", "description": "Strategy, content creation, and consistent posting for Facebook, Instagram, and X." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Video Production and Editing", "description": "Short-form reels, brand stories, and long-form video production and editing." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Paid Social Advertising", "description": "Facebook and Instagram ad strategy, creative, targeting, and testing." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Landing Page Design", "description": "Conversion-focused landing pages with a clear offer and next step." } },
-            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Chatbots and Automation", "description": "Business-specific AI chatbots that answer questions, capture leads, and automate follow-up." } }
-          ]
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 32.2440, "longitude": -80.8615 },
+          "geoRadius": "80000"
         },
+        "knowsAbout": ["Digital marketing", "Digital marketing agency", "Social media marketing", "Social media management", "Video production", "Video editing", "Short-form video", "Paid social advertising", "Facebook ads", "Instagram ads", "Landing page design", "Conversion rate optimization", "AI chatbots", "Marketing automation", "Lead follow-up automation", "Small business marketing", "Local SEO"],
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@id": "https://paymegpt.com/p/mw6iaP#svc-social-media" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://paymegpt.com/p/mw6iaP#svc-video-production" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://paymegpt.com/p/mw6iaP#svc-paid-social" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://paymegpt.com/p/mw6iaP#svc-landing-pages" } },
+          { "@type": "Offer", "itemOffered": { "@id": "https://paymegpt.com/p/mw6iaP#svc-ai-automation" } }
+        ],
         "sameAs": [
+          "https://www.facebook.com/BaggottsBots",
           "https://www.youtube.com/@PAYMEGPT",
           "https://x.com/PayMeGPT",
           "https://www.instagram.com/paymegpt/",
@@ -96,14 +103,107 @@
           "https://chatbotbuilder.ai",
           "https://paymegpt.com"
         ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "sales",
-          "email": "ryan@baggottsbots.com",
-          "telephone": "+1-844-960-3097",
-          "areaServed": "US",
-          "availableLanguage": "English"
-        }
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "ryan@baggottsbots.com",
+            "telephone": "+1-844-960-3097",
+            "areaServed": "US",
+            "availableLanguage": "English"
+          }
+        ]
+      },
+      {
+        "@type": "City",
+        "@id": "https://paymegpt.com/p/mw6iaP#area-bluffton",
+        "name": "Bluffton, South Carolina",
+        "sameAs": "https://en.wikipedia.org/wiki/Bluffton,_South_Carolina",
+        "containedInPlace": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" }
+      },
+      {
+        "@type": "City",
+        "@id": "https://paymegpt.com/p/mw6iaP#area-hilton-head",
+        "name": "Hilton Head Island, South Carolina",
+        "sameAs": "https://en.wikipedia.org/wiki/Hilton_Head_Island,_South_Carolina",
+        "containedInPlace": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" }
+      },
+      {
+        "@type": "City",
+        "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort",
+        "name": "Beaufort, South Carolina",
+        "sameAs": "https://en.wikipedia.org/wiki/Beaufort,_South_Carolina",
+        "containedInPlace": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" }
+      },
+      {
+        "@type": "AdministrativeArea",
+        "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county",
+        "name": "Beaufort County, South Carolina",
+        "sameAs": "https://en.wikipedia.org/wiki/Beaufort_County,_South_Carolina",
+        "containedInPlace": { "@type": "State", "name": "South Carolina", "sameAs": "https://en.wikipedia.org/wiki/South_Carolina" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://paymegpt.com/p/mw6iaP#svc-social-media",
+        "name": "Social Media Management",
+        "serviceType": "Social media marketing",
+        "description": "Strategy, content creation, and consistent posting for Facebook, Instagram, and X for businesses in Bluffton, Hilton Head Island and Beaufort, SC.",
+        "url": "https://paymegpt.com/p/mw6iaP#social-media",
+        "provider": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "areaServed": [
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-bluffton" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-hilton-head" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort" }
+        ],
+        "offers": { "@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Custom-scoped proposal after a free strategy call" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://paymegpt.com/p/mw6iaP#svc-video-production",
+        "name": "Video Production and Editing",
+        "serviceType": "Video production",
+        "description": "Short-form reels, brand stories, and long-form video production and editing for businesses in Bluffton, Hilton Head Island and Beaufort, SC.",
+        "url": "https://paymegpt.com/p/mw6iaP#video-production",
+        "provider": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "areaServed": [
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-bluffton" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-hilton-head" },
+          { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort" }
+        ],
+        "offers": { "@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Custom-scoped proposal after a free strategy call" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://paymegpt.com/p/mw6iaP#svc-paid-social",
+        "name": "Paid Social Advertising",
+        "serviceType": "Social media advertising",
+        "description": "Facebook and Instagram ad strategy, creative, targeting, and testing for Beaufort County businesses.",
+        "url": "https://paymegpt.com/p/mw6iaP#paid-social",
+        "provider": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "areaServed": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" },
+        "offers": { "@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Management scoped separately from ad spend" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://paymegpt.com/p/mw6iaP#svc-landing-pages",
+        "name": "Landing Page Design",
+        "serviceType": "Web design",
+        "description": "Conversion-focused landing pages with a clear offer and one obvious next step.",
+        "url": "https://paymegpt.com/p/mw6iaP#landing-pages",
+        "provider": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "areaServed": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" },
+        "offers": { "@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Custom-scoped proposal after a free strategy call" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://paymegpt.com/p/mw6iaP#svc-ai-automation",
+        "name": "AI Chatbots and Automation",
+        "serviceType": "Marketing automation",
+        "description": "Business-specific AI chatbots that answer questions, capture leads, and automate follow-up around the clock with a planned human handoff.",
+        "url": "https://paymegpt.com/p/mw6iaP#ai-automation",
+        "provider": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "areaServed": { "@id": "https://paymegpt.com/p/mw6iaP#area-beaufort-county" },
+        "offers": { "@type": "Offer", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "description": "Custom-scoped proposal after a free strategy call" }
       },
       {
         "@type": "Person",
@@ -112,12 +212,27 @@
         "alternateName": "The Chatbot King",
         "jobTitle": "Founder and AI Agent Builder",
         "description": "Founder of Chatbot Builder AI and PayMeGPT, known as the Chatbot King. Chatbot Builder AI was ranked #1 Easiest To Use chatbot software in G2's Spring 2024 report.",
-        "url": "https://paymegpt.com/p/mw6iaP",
+        "award": "G2 Spring 2024 Report: #1 Easiest To Use chatbot software (Chatbot Builder AI)",
+        "url": "https://paymegpt.com/p/mw6iaP#about",
         "image": "https://paymegpt.com/objects/quick-uploads/2/c378e409731d71c9.png",
         "worksFor": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
-        "homeLocation": { "@type": "City", "name": "Bluffton, South Carolina" },
-        "knowsAbout": ["Artificial Intelligence", "AI Agents", "Chatbots", "Digital Marketing", "Marketing Automation", "SaaS"],
-        "sameAs": ["https://chatbotbuilder.ai", "https://paymegpt.com", "https://www.youtube.com/@PAYMEGPT"]
+        "homeLocation": { "@id": "https://paymegpt.com/p/mw6iaP#area-bluffton" },
+        "knowsAbout": ["Artificial Intelligence", "AI Agents", "Chatbots", "Digital Marketing", "Video Production", "Marketing Automation", "SaaS"],
+        "sameAs": ["https://chatbotbuilder.ai", "https://paymegpt.com", "https://www.youtube.com/@PAYMEGPT", "https://www.linkedin.com/in/ryanbaggott", "https://x.com/PayMeGPT"]
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://paymegpt.com/p/mw6iaP#logo",
+        "url": "https://paymegpt.com/objects/quick-uploads/2/fd458ba8be29aaa9.jpg",
+        "contentUrl": "https://paymegpt.com/objects/quick-uploads/2/fd458ba8be29aaa9.jpg",
+        "caption": "BaggottsBOTs Digital Marketing Agency logo"
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://paymegpt.com/p/mw6iaP#heroimage",
+        "url": "https://paymegpt.com/objects/quick-uploads/2/94d42141aaed4254.jpg",
+        "contentUrl": "https://paymegpt.com/objects/quick-uploads/2/94d42141aaed4254.jpg",
+        "caption": "BaggottsBOTs Digital Marketing Agency, marketing that hits different"
       },
       {
         "@type": "WebSite",
@@ -128,14 +243,38 @@
         "inLanguage": "en-US"
       },
       {
+        "@type": "WebPage",
+        "@id": "https://paymegpt.com/p/mw6iaP#webpage",
+        "url": "https://paymegpt.com/p/mw6iaP",
+        "name": "BaggottsBOTs Digital Marketing Agency | Bluffton, Hilton Head Island and Beaufort, SC",
+        "description": "Digital marketing agency in Bluffton, SC serving Hilton Head Island, Beaufort and Beaufort County. Video production, social media management, paid social ads, landing pages, and AI automation.",
+        "isPartOf": { "@id": "https://paymegpt.com/p/mw6iaP#website" },
+        "about": { "@id": "https://paymegpt.com/p/mw6iaP#business" },
+        "primaryImageOfPage": { "@id": "https://paymegpt.com/p/mw6iaP#heroimage" },
+        "breadcrumb": { "@id": "https://paymegpt.com/p/mw6iaP#breadcrumb" },
+        "dateModified": "2026-11-03",
+        "inLanguage": "en-US",
+        "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", "#hero-intro"] }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://paymegpt.com/p/mw6iaP#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://paymegpt.com/p/mw6iaP" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://paymegpt.com/p/mw6iaP#services" },
+          { "@type": "ListItem", "position": 3, "name": "Where we work", "item": "https://paymegpt.com/p/mw6iaP#areas" }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "@id": "https://paymegpt.com/p/mw6iaP#faq",
         "mainEntity": [
-          { "@type": "Question", "name": "Is BaggottsBOTs a digital marketing agency in Bluffton, SC?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. BaggottsBOTs Digital Marketing Agency is based in Bluffton, South Carolina, and serves local and growing businesses in Beaufort County, Hilton Head Island, and the wider Lowcountry. It also works with clients online." } },
-          { "@type": "Question", "name": "What digital marketing services are included?", "acceptedAnswer": { "@type": "Answer", "text": "Social media management, video production and editing, paid social advertising on Facebook and Instagram, conversion-focused landing pages, AI chatbots, and lead follow-up automation. Most businesses start with one area and expand as results come in." } },
-          { "@type": "Question", "name": "Can you help a small business with AI automation?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We build business-specific AI chatbots that answer common questions, capture inquiries, and support follow-up around the clock, with a planned handoff to a real person when needed." } },
-          { "@type": "Question", "name": "How much does digital marketing cost in the Lowcountry?", "acceptedAnswer": { "@type": "Answer", "text": "Pricing is custom-scoped around your goals, deliverables, and setup. Paid ad spend is billed separately from management. The strategy call is free, and you receive a clear proposal before committing." } },
-          { "@type": "Question", "name": "What does the free strategy call include?", "acceptedAnswer": { "@type": "Answer", "text": "A conversation about your business, your customers, and where marketing feels stuck, followed by practical next steps and an honest recommendation on whether working together makes sense. There is no obligation to buy." } }
+          { "@type": "Question", "name": "Is BaggottsBOTs a digital marketing agency in Bluffton, SC?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. BaggottsBOTs Digital Marketing Agency is based in Bluffton, South Carolina, and serves local and growing businesses in Hilton Head Island, Beaufort, Beaufort County, and the wider Lowcountry. We also work with clients online." } },
+          { "@type": "Question", "name": "Do I need every service?", "acceptedAnswer": { "@type": "Answer", "text": "Nope. We start with your goals and the biggest gap in your current setup. That might mean better video, one landing page, a chatbot, or a connected campaign, not everything at once." } },
+          { "@type": "Question", "name": "What happens on the free strategy call?", "acceptedAnswer": { "@type": "Answer", "text": "We'll talk about your business, your customers, and where marketing feels stuck. Then we'll identify useful next steps and whether working together makes sense. No obligation to buy." } },
+          { "@type": "Question", "name": "Do you offer video production and social media management in Hilton Head Island and Beaufort?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Video production, editing, and social media management are core services across Bluffton, Hilton Head Island, and Beaufort, SC. We shoot on location in the Lowcountry and handle the editing, posting, and paid promotion." } },
+          { "@type": "Question", "name": "Will AI replace the human side of my business?", "acceptedAnswer": { "@type": "Answer", "text": "That's not the goal. AI handles repeat questions and routine follow-up so you can spend more time on people. We plan the voice, boundaries, and human handoff around your business." } },
+          { "@type": "Question", "name": "How much does digital marketing cost in the Lowcountry?", "acceptedAnswer": { "@type": "Answer", "text": "Pricing is custom-scoped around your goals, deliverables, and setup. Paid ad spend is billed separately from management. The strategy call is free, and you receive a clear proposal before committing." } }
         ]
       }
     ]
@@ -174,20 +313,24 @@
 
 
 <!-- SEO Meta Tags -->
-<title>BaggottsBOTs Digital Marketing Agency</title>
-<meta name="description" content="AI-powered marketing that gets attention, books calls, and follows up while you sleep." />
-<meta property="og:title" content="BaggottsBOTs Digital Marketing Agency" />
-<meta property="og:description" content="AI-powered marketing that gets attention, books calls, and follows up while you sleep." />
+<title>Top Digital Marketing Agency Bluffton SC | BaggottsBOTs</title>
+<meta name="description" content="Elevate your business with expert digital marketing, high-impact video production, paid ads, and AI automation from Bluffton's leading agency." />
+<meta name="keywords" content="Digital Marketing Agency Bluffton SC" />
+<meta property="og:title" content="Top Digital Marketing Agency Bluffton SC | BaggottsBOTs" />
+<meta property="og:description" content="Elevate your business with expert digital marketing, high-impact video production, paid ads, and AI automation from Bluffton's leading agency." />
 <meta property="og:image" content="https://paymegpt.com/objects/quick-uploads/2/94d42141aaed4254.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="BaggottsBOTs Digital Marketing Agency" />
-<meta name="twitter:description" content="AI-powered marketing that gets attention, books calls, and follows up while you sleep." />
+<meta name="twitter:title" content="Top Digital Marketing Agency Bluffton SC | BaggottsBOTs" />
+<meta name="twitter:description" content="Elevate your business with expert digital marketing, high-impact video production, paid ads, and AI automation from Bluffton's leading agency." />
 <meta name="twitter:image" content="https://paymegpt.com/objects/quick-uploads/2/94d42141aaed4254.jpg" />
+<link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico" />
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <!-- End SEO Meta Tags -->
 <script data-lp-token-hydrate>
 (function(){try{
-  var slug="lp-mw05p6xp-tslen";
+  var slug="digital-marketing-agency-bluffton-sc";
   var SITEK="";
   var SK='lp_access_'+slug;
   var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
@@ -494,10 +637,10 @@
   </svg>
   <a href="#main" class="fixed -top-20 left-4 z-[100] bg-gold px-5 py-3 text-sm font-bold text-ink focus:top-4">Skip to content</a>
 
-  <header data-section="navbar" class="sticky top-0 z-40 border-b border-white/10 bg-ink/95 backdrop-blur-xl">
+  <header data-section="navbar" class="sticky top-0 z-40 border-b border-white/10 bg-black">
     <div class="container-wide flex h-[86px] items-center justify-between gap-6">
       <a href="#home" aria-label="BaggottsBOTs Digital Marketing Agency home" class="flex shrink-0 items-center gap-3">
-        <img src="https://paymegpt.com/objects/quick-uploads/2/fd458ba8be29aaa9.jpg" alt="BaggottsBOTs logo" width="40" height="40" class="h-10 w-10 rounded-full border border-gold/60 object-cover">
+        <img src="https://paymegpt.com/objects/quick-uploads/2/4fcf8a92e5adf736.jpg" alt="BaggottsBOTs Digital Marketing Agency logo, Bluffton SC" width="40" height="40" class="h-14 w-14 object-contain sm:h-10 sm:w-10">
         <span class="font-display text-[22px] font-bold uppercase leading-none tracking-tight">BaggottsBOTs<span class="text-gold">.</span><br><span class="block pt-1 font-sans text-[8px] font-medium tracking-[.3em]">DIGITAL MARKETING AGENCY</span></span>
       </a>
       <nav aria-label="Main navigation" class="hidden items-center gap-8 lg:flex">
@@ -520,17 +663,18 @@
       <a class="block py-3 text-sm" href="https://baggottsbots.github.io/baggottsbots-agency-site/#areas">Where we work</a>
       <a class="block py-3 text-sm" href="https://baggottsbots.github.io/baggottsbots-agency-site/blog/">Blog</a>
       <a class="block py-3 text-sm" href="https://baggottsbots.github.io/baggottsbots-agency-site/contact/">Contact</a>
-      <a class="block py-3 text-sm font-bold text-gold" href="https://baggottsbots.github.io/baggottsbots-agency-site/contact/">Book a free strategy call ↗</a>
+      <a class="flex items-center gap-2 py-3 text-sm font-bold text-gold" href="https://baggottsbots.github.io/baggottsbots-agency-site/contact/">Book a free strategy call <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
     </nav>
+    <div class="scroll-progress" aria-hidden="true"></div>
   </header>
 
   <main id="main">
     <section id="home" data-section="hero" class="relative overflow-hidden">
       <div class="container-wide hero-grid pb-12 pt-16 md:pb-16 md:pt-20">
         <div class="relative z-10">
-          <div data-hero class="eyebrow mb-7 flex items-center gap-3 text-gold"><span class="h-px w-7 bg-gold"></span>Digital marketing agency in Bluffton, South Carolina</div>
+          <div data-hero class="eyebrow mb-7 flex items-center gap-3 text-gold"><span class="h-px w-7 bg-gold"></span>Digital marketing agency in Bluffton, SC</div>
           <h1 data-hero class="display text-[77px] sm:text-[100px] lg:text-[118px] xl:text-[136px]">Marketing<br>that hits<br><span class="text-gold">different.</span><span class="text-gold">*</span></h1>
-          <p data-hero class="mt-7 max-w-[440px] text-sm leading-[1.85] text-muted md:text-[15px]">BaggottsBOTs is a digital marketing agency for Lowcountry businesses, offering video production, social media, paid ads, and AI automation. Big-agency energy with local-business focus. We turn scrolls into conversations, and conversations into customers, with content, ads, and AI that never clocks out.</p>
+          <p data-hero id="hero-intro" class="mt-7 max-w-[440px] text-sm leading-[1.85] text-muted md:text-[15px]">BaggottsBOTs is a digital marketing agency for Bluffton, Hilton Head Island, and Beaufort businesses, offering <a href="#video-production" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">video production</a>, <a href="#social-media" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">social media management</a>, paid ads, and AI automation. Big-agency energy with local-business focus. We turn scrolls into conversations, and conversations into customers, with content, ads, and AI that never clocks out.</p>
           <a data-hero href="#strategy" class="btn btn-gold mt-8">Let's build your growth plan <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
           <div data-hero class="mt-5 flex items-center gap-2 text-[10px] text-muted"><svg class="icon h-3.5 w-3.5 text-gold"><use href="#i-check"/></svg>Free strategy call. Real ideas. Zero pressure.</div>
         </div>
@@ -564,7 +708,7 @@
       <div class="border-y border-white/10 bg-[#151513]">
         <div class="container-wide grid grid-cols-2 gap-y-8 py-8 lg:grid-cols-4">
           <div class="border-r border-white/10 pr-5" data-aos="fade-up">
-            <div class="font-display text-5xl font-semibold text-gold">300K<span class="text-3xl">+</span></div>
+            <div class="font-display text-5xl font-semibold text-gold"><span data-count="300">300</span>K<span class="text-3xl">+</span></div>
             <div class="mt-2 text-[10px] text-muted">YouTube views. Knowledge shared.</div>
           </div>
           <div class="pl-6 lg:border-r lg:border-white/10" data-aos="fade-up" data-aos-delay="100">
@@ -587,38 +731,38 @@
       <div class="container-wide">
         <div class="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end" data-aos="fade-up">
           <div><p class="eyebrow mb-5 text-gold">01 / The unfair advantage</p><h2 class="display text-6xl md:text-7xl">Less noise.<br>More <span class="text-gold">"let's talk."</span></h2></div>
-          <p class="max-w-[335px] text-sm leading-relaxed text-muted">Not random posts and crossed fingers. A connected marketing engine built to get you noticed, get you leads, and keep the conversation going.</p>
+          <p class="max-w-[335px] text-sm leading-relaxed text-muted">Not random posts and crossed fingers. A connected marketing engine for Bluffton, Hilton Head Island, and Beaufort businesses, built to get you noticed, get you leads, and keep the conversation going.</p>
         </div>
         <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <article class="service-card" data-aos="fade-up">
+          <article id="social-media" class="service-card" data-aos="fade-up">
             <div class="mb-9 flex items-center justify-between"><svg class="icon h-7 w-7 text-gold"><use href="#i-social"/></svg><span class="font-display text-sm text-muted">01</span></div>
             <h3 class="font-display text-[29px] font-semibold uppercase">Social that stops the scroll.</h3>
-            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Strategy, content, and consistency. Show up with a voice people recognize, and a reason for them to care.</p>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><span class="eyebrow !text-[8px] text-gold">Social media management</span><a href="#strategy" aria-label="Discuss social media management on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
+            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Social media management for Bluffton and Hilton Head Island businesses. Strategy, content, and consistency. Show up with a voice people recognize, and a reason for them to care.</p>
+            <div class="flex items-center justify-between border-t border-white/10 pt-4"><a href="https://baggottsbots.github.io/baggottsbots-agency-site/services/" class="service-link eyebrow !text-[8px] text-gold">Social media management</a><a href="#strategy" aria-label="Discuss social media management on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
           </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <article id="video-production" class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-9 flex items-center justify-between"><svg class="icon h-7 w-7 text-gold"><use href="#i-video"/></svg><span class="font-display text-sm text-muted">02</span></div>
             <h3 class="font-display text-[29px] font-semibold uppercase">Video with main-character energy.</h3>
-            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">From short-form reels to brand stories, we make your business look as good on screen as it is in real life.</p>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><span class="eyebrow !text-[8px] text-gold">Video production and editing</span><a href="#strategy" aria-label="Discuss video production on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
+            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Video production in Hilton Head Island, Bluffton, and Beaufort. From short-form reels to brand stories, we make your business look as good on screen as it is in real life.</p>
+            <div class="flex items-center justify-between border-t border-white/10 pt-4"><a href="https://baggottsbots.github.io/baggottsbots-agency-site/services/" class="service-link eyebrow !text-[8px] text-gold">Video production and editing</a><a href="#strategy" aria-label="Discuss video production on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
           </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <article id="paid-social" class="service-card" data-aos="fade-up" data-aos-delay="200">
             <div class="mb-9 flex items-center justify-between"><svg class="icon h-7 w-7 text-gold"><use href="#i-target"/></svg><span class="font-display text-sm text-muted">03</span></div>
             <h3 class="font-display text-[29px] font-semibold uppercase">Ads with a job to do.</h3>
-            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Reach the right people with creative that earns attention. Test, learn, and refine, without worshipping vanity metrics.</p>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><span class="eyebrow !text-[8px] text-gold">Paid social advertising</span><a href="#strategy" aria-label="Discuss paid social advertising on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
+            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Paid social ads for Beaufort County. Reach the right people with creative that earns attention. Test, learn, and refine, without worshipping vanity metrics.</p>
+            <div class="flex items-center justify-between border-t border-white/10 pt-4"><a href="https://baggottsbots.github.io/baggottsbots-agency-site/services/" class="service-link eyebrow !text-[8px] text-gold">Paid social advertising</a><a href="#strategy" aria-label="Discuss paid social advertising on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
           </article>
-          <article class="service-card" data-aos="fade-up">
+          <article id="landing-pages" class="service-card" data-aos="fade-up">
             <div class="mb-9 flex items-center justify-between"><svg class="icon h-7 w-7 text-gold"><use href="#i-web"/></svg><span class="font-display text-sm text-muted">04</span></div>
             <h3 class="font-display text-[29px] font-semibold uppercase">Pages that pull their weight.</h3>
-            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Give every click somewhere worth landing. Fast, focused pages with a clear offer and one obvious next step.</p>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><span class="eyebrow !text-[8px] text-gold">Conversion-focused landing pages</span><a href="#strategy" aria-label="Discuss landing pages on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
+            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">Give every click somewhere worth landing. Fast, focused landing pages for Lowcountry businesses with a clear offer and one obvious next step.</p>
+            <div class="flex items-center justify-between border-t border-white/10 pt-4"><a href="https://baggottsbots.github.io/baggottsbots-agency-site/services/" class="service-link eyebrow !text-[8px] text-gold">Conversion-focused landing pages</a><a href="#strategy" aria-label="Discuss landing pages on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
           </article>
-          <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <article id="ai-automation" class="service-card" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-9 flex items-center justify-between"><svg class="icon h-7 w-7 text-gold"><use href="#i-bot"/></svg><span class="font-display text-sm text-muted">05</span></div>
             <h3 class="font-display text-[29px] font-semibold uppercase">A lead never left on read.</h3>
-            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">AI chatbots that answer questions, capture inquiries, and power follow-up around the clock. Your new favorite team player.</p>
-            <div class="flex items-center justify-between border-t border-white/10 pt-4"><span class="eyebrow !text-[8px] text-gold">AI chatbots and automation</span><a href="#strategy" aria-label="Discuss AI chatbots and automation on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
+            <p class="mb-7 mt-3 text-xs leading-[1.9] text-muted">AI chatbots and automation for South Carolina small businesses. Answer questions, capture inquiries, and power follow-up around the clock. Your new favorite team player.</p>
+            <div class="flex items-center justify-between border-t border-white/10 pt-4"><a href="https://baggottsbots.github.io/baggottsbots-agency-site/services/" class="service-link eyebrow !text-[8px] text-gold">AI chatbots and automation</a><a href="#strategy" aria-label="Discuss AI chatbots and automation on a free strategy call"><svg class="icon service-arrow h-5 w-5"><use href="#i-up-right"/></svg></a></div>
           </article>
           <article class="service-card !border-gold !bg-gold !text-ink" data-aos="fade-up" data-aos-delay="200">
             <svg class="icon mb-7 h-9 w-9"><use href="#i-bolt"/></svg>
@@ -634,14 +778,14 @@
       <div class="container-wide grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div class="relative" data-aos="fade-right">
           <div class="absolute -left-3 -top-3 h-24 w-24 border-l-2 border-t-2 border-gold" aria-hidden="true"></div>
-          <div class="relative overflow-hidden">
-            <img src="https://paymegpt.com/objects/quick-uploads/2/c378e409731d71c9.png" alt="Ryan Baggott, founder of BaggottsBOTs Digital Marketing Agency and PayMeGPT, the Chatbot King" class="portrait !h-auto !min-h-[460px] !object-contain !object-bottom" style="background: none; filter: drop-shadow(0 20px 40px #000000aa) drop-shadow(0 6px 14px #8A2BFF40); height: auto; min-height: 460px;" loading="lazy" width="640" height="650">
+          <div class="portrait-frame">
+            <img src="https://paymegpt.com/objects/quick-uploads/2/c378e409731d71c9.png" alt="Ryan Baggott, founder of BaggottsBOTs Digital Marketing Agency in Bluffton, SC and creator of PayMeGPT, known as the Chatbot King" class="portrait" loading="lazy" width="640" height="650">
             <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/60 to-transparent px-7 pb-7 pt-24">
               <div class="eyebrow mb-2 !text-[9px] text-gold">Builder. Educator. Your unfair advantage.</div>
               <div class="font-display text-5xl font-bold uppercase">The Chatbot King<span class="text-gold">.</span></div>
             </div>
           </div>
-          <div class="absolute -bottom-5 right-5 flex rotate-[-4deg] items-center gap-3 bg-gold px-5 py-4 text-ink">
+          <div class="about-badge absolute -bottom-5 right-5 flex rotate-[-4deg] items-center gap-3 bg-gold px-5 py-4 text-ink">
             <svg class="icon h-7 w-7"><use href="#i-crown"/></svg>
             <span class="eyebrow !text-[9px] !leading-[1.6]">Not another agency guy.<br>An actual AI operator.</span>
           </div>
@@ -652,7 +796,7 @@
           <div class="mt-7 space-y-4 text-sm leading-[1.9] text-muted">
             <p>Known in the AI community as the <strong class="font-medium text-cream">Chatbot King</strong>, our founder Ryan Baggott went all-in on automation long before it became everyone's favorite buzzword.</p>
             <p>He runs a no-code chatbot platform ranked <strong class="font-medium text-cream">#1 Easiest To Use in G2's Spring 2024 report</strong>, created <strong class="font-medium text-cream">PayMeGPT</strong> to help people build and monetize AI agents, and has reached 300,000 YouTube views by showing the work.</p>
-            <p>Live builds. Unfiltered AMAs. Real systems. Now that same builder mindset is helping Bluffton, Beaufort, and Hilton Head Island businesses connect great marketing with the technology to follow through.</p>
+            <p>Live builds. Unfiltered AMAs. Real systems. Now that same builder mindset is helping <a href="#areas" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">Bluffton, Beaufort, and Hilton Head Island businesses</a> connect great marketing with the technology to follow through.</p>
           </div>
           <div class="my-7 border-l-2 border-gold pl-5">
             <p class="font-display text-[26px] font-medium uppercase leading-tight">Less "look what AI can do."<br>More <span class="text-gold">"look what it can do for you."</span></p>
@@ -677,7 +821,7 @@
             <p class="eyebrow mt-6 !text-[8px] text-gold">Platform recognition / Spring 2024</p>
           </article>
           <article class="proof-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="flex items-center justify-between"><span class="font-display text-5xl font-bold text-gold">300K+</span><svg class="icon h-6 w-6 text-muted"><use href="#i-video"/></svg></div>
+            <div class="flex items-center justify-between"><span class="font-display text-5xl font-bold text-gold"><span data-count="300">300</span>K+</span><svg class="icon h-6 w-6 text-muted"><use href="#i-video"/></svg></div>
             <p class="mt-7 font-display text-[31px] font-semibold uppercase leading-tight">Show it. Don't just say it.</p>
             <p class="mt-3 text-xs leading-[1.9] text-muted">300,000 YouTube views, with live builds and AMAs that take AI out of the slide deck and into the real world. The process isn't a black box.</p>
             <p class="eyebrow mt-6 !text-[8px] text-gold">Education / Community / Real builds</p>
@@ -738,7 +882,11 @@
             <a href="#strategy" class="btn btn-outline mt-auto">Talk AI <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
           </article>
         </div>
-        <div class="mt-10 grid gap-x-10 md:grid-cols-2">
+        <div id="faq" class="mt-10 grid gap-x-10 md:grid-cols-2">
+          <details class="border-b border-white/15 py-5">
+            <summary class="flex items-center justify-between gap-5 text-xs font-semibold">Is BaggottsBOTs a digital marketing agency in Bluffton, SC?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
+            <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">Yes. BaggottsBOTs Digital Marketing Agency is based in Bluffton, South Carolina, and serves local and growing businesses in Hilton Head Island, Beaufort, Beaufort County, and the wider Lowcountry. We also work with clients online.</p>
+          </details>
           <details class="border-b border-white/15 py-5">
             <summary class="flex items-center justify-between gap-5 text-xs font-semibold">Do I need every service?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
             <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">Nope. We start with your goals and the biggest gap in your current setup. That might mean better video, one landing page, a chatbot, or a connected campaign, not everything at once.</p>
@@ -748,12 +896,16 @@
             <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">We'll talk about your business, your customers, and where marketing feels stuck. Then we'll identify useful next steps and whether working together makes sense. No obligation to buy.</p>
           </details>
           <details class="border-b border-white/15 py-5">
+            <summary class="flex items-center justify-between gap-5 text-xs font-semibold">Do you offer video production and social media management in Hilton Head Island and Beaufort?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
+            <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">Yes. Video production, editing, and social media management are core services across Bluffton, Hilton Head Island, and Beaufort, SC. We shoot on location in the Lowcountry and handle the editing, posting, and paid promotion.</p>
+          </details>
+          <details class="border-b border-white/15 py-5">
             <summary class="flex items-center justify-between gap-5 text-xs font-semibold">Will AI replace the human side of my business?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
             <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">That's not the goal. AI handles repeat questions and routine follow-up so you can spend more time on people. We plan the voice, boundaries, and human handoff around your business.</p>
           </details>
           <details class="border-b border-white/15 py-5">
-            <summary class="flex items-center justify-between gap-5 text-xs font-semibold">Who is this for?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
-            <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">Local and growing businesses in Bluffton, Beaufort County, Hilton Head Island, and the wider Lowcountry. If you have a good business and need more people to discover it, and a better way to follow up, we should talk.</p>
+            <summary class="flex items-center justify-between gap-5 text-xs font-semibold">How much does digital marketing cost in the Lowcountry?<svg class="icon details-plus h-4 w-4 text-gold"><use href="#i-plus"/></svg></summary>
+            <p class="mt-4 pr-7 text-xs leading-[1.9] text-muted">Pricing is custom-scoped around your goals, deliverables, and setup. Paid ad spend is billed separately from management. The strategy call is free, and you receive a clear proposal before committing.</p>
           </details>
         </div>
       </div>
@@ -764,14 +916,31 @@
         <div data-aos="fade-up">
           <p class="eyebrow mb-5 text-gold">05 / Where we work</p>
           <h2 class="display text-6xl md:text-7xl">Local roots.<br><span class="text-gold">Lowcountry reach.</span></h2>
-          <p class="mt-6 max-w-md text-sm leading-[1.9] text-muted">BaggottsBOTs Digital Marketing Agency is based in Bluffton, South Carolina, serving Beaufort County and Hilton Head Island. We also work with clients across South Carolina and online.</p>
+          <p class="mt-6 max-w-md text-sm leading-[1.9] text-muted">BaggottsBOTs Digital Marketing Agency is based in Bluffton, South Carolina, serving Hilton Head Island, Beaufort, and all of Beaufort County with <a href="#video-production" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">video production</a>, <a href="#social-media" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">social media management</a>, <a href="#paid-social" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">paid social ads</a>, and <a href="#ai-automation" class="text-cream underline decoration-gold/50 underline-offset-4 hover:text-gold">AI automation</a>. We also work with clients across South Carolina and online.</p>
+          <a href="#strategy" class="mt-7 inline-flex items-center gap-5 text-xs font-bold text-gold">Book a free local strategy call <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
         </div>
-        <ul class="grid grid-cols-1 gap-3 text-xs text-stone-300 sm:grid-cols-2" data-aos="fade-up" data-aos-delay="100">
-          <li class="border border-white/10 p-5"><span class="eyebrow block !text-[8px] text-gold">Bluffton, SC</span><span class="mt-2 block text-sm font-semibold text-cream">Digital marketing and AI automation</span></li>
-          <li class="border border-white/10 p-5"><span class="eyebrow block !text-[8px] text-gold">Hilton Head Island, SC</span><span class="mt-2 block text-sm font-semibold text-cream">Social media, video, and paid ads</span></li>
-          <li class="border border-white/10 p-5"><span class="eyebrow block !text-[8px] text-gold">Beaufort, SC</span><span class="mt-2 block text-sm font-semibold text-cream">Landing pages and lead follow-up</span></li>
-          <li class="border border-white/10 p-5"><span class="eyebrow block !text-[8px] text-gold">Beaufort County, SC</span><span class="mt-2 block text-sm font-semibold text-cream">Full-stack growth systems</span></li>
-        </ul>
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <article id="bluffton" class="area-card" data-aos="fade-up">
+            <span class="eyebrow block !text-[8px] text-gold">Bluffton, SC</span>
+            <h3 class="mt-2 font-display text-2xl font-bold uppercase leading-tight">Digital marketing agency in Bluffton</h3>
+            <p class="mt-2 text-xs leading-[1.8] text-muted">Home base. <a href="#social-media">Social media management</a>, <a href="#video-production">video production</a>, and <a href="#ai-automation">AI automation</a> for Bluffton businesses, from Old Town to Buckwalter.</p>
+          </article>
+          <article id="hilton-head" class="area-card" data-aos="fade-up" data-aos-delay="100">
+            <span class="eyebrow block !text-[8px] text-gold">Hilton Head Island, SC</span>
+            <h3 class="mt-2 font-display text-2xl font-bold uppercase leading-tight">Video production and social media on Hilton Head Island</h3>
+            <p class="mt-2 text-xs leading-[1.8] text-muted">On-location <a href="#video-production">video</a>, <a href="#social-media">social content</a>, and <a href="#paid-social">paid ads</a> for restaurants, real estate, hospitality, and island businesses.</p>
+          </article>
+          <article id="beaufort" class="area-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="eyebrow block !text-[8px] text-gold">Beaufort, SC</span>
+            <h3 class="mt-2 font-display text-2xl font-bold uppercase leading-tight">Landing pages and lead follow-up in Beaufort</h3>
+            <p class="mt-2 text-xs leading-[1.8] text-muted"><a href="#landing-pages">Conversion-focused pages</a>, <a href="#paid-social">paid social campaigns</a>, and <a href="#ai-automation">AI chatbots</a> that follow up with every Beaufort lead.</p>
+          </article>
+          <article id="beaufort-county" class="area-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="eyebrow block !text-[8px] text-gold">Beaufort County and the Lowcountry</span>
+            <h3 class="mt-2 font-display text-2xl font-bold uppercase leading-tight">Full-stack growth systems across the Lowcountry</h3>
+            <p class="mt-2 text-xs leading-[1.8] text-muted">Content, ads, pages, and automation working together for growing businesses in Okatie, Sun City, Port Royal, Lady's Island, and beyond.</p>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -806,13 +975,17 @@
         <div>
           <a href="#home" class="font-display text-3xl font-bold uppercase">BaggottsBOTs<span class="text-gold">.</span></a>
           <p class="mt-3 text-xs text-muted">Digital marketing agency in Bluffton, South Carolina.</p>
+          <p class="mt-2 text-xs text-muted">Video production, social media, paid ads, landing pages, and AI automation.</p>
           <p class="mt-2 text-xs text-muted">Founded by Ryan Baggott, the Chatbot King.</p>
           <p class="mt-2 text-xs text-muted">A property of Tap The Table LLC.</p>
         </div>
         <nav aria-label="Footer navigation" class="flex flex-wrap gap-x-7 gap-y-4 text-[11px]">
           <a class="text-muted hover:text-gold" href="#services">Services</a>
+          <a class="text-muted hover:text-gold" href="#video-production">Video production</a>
+          <a class="text-muted hover:text-gold" href="#social-media">Social media</a>
           <a class="text-muted hover:text-gold" href="#about">Our story</a>
           <a class="text-muted hover:text-gold" href="#proof">The receipts</a>
+          <a class="text-muted hover:text-gold" href="#faq">FAQ</a>
           <a class="text-muted hover:text-gold" href="#areas">Where we work</a>
           <a class="text-muted hover:text-gold" href="https://baggottsbots.github.io/baggottsbots-agency-site/blog/">Blog</a>
           <a class="font-bold text-gold" href="#strategy">Let's talk ↗</a>
@@ -822,7 +995,7 @@
       <div class="footer-wordmark mt-14 select-none font-display font-extrabold uppercase" aria-hidden="true">Marketing that hits different.</div>
       <div class="mt-10 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-[9px] text-muted sm:flex-row">
         <p>© 2026 BaggottsBOTs Digital Marketing Agency. All rights reserved.</p>
-        <p class="pr-16">Located in Bluffton, South Carolina. Serving Beaufort County and Hilton Head Island.</p>
+        <p class="pr-16">Serving <a class="hover:text-gold" href="#bluffton">Bluffton</a>, <a class="hover:text-gold" href="#hilton-head">Hilton Head Island</a>, <a class="hover:text-gold" href="#beaufort">Beaufort</a>, and <a class="hover:text-gold" href="#beaufort-county">Beaufort County, SC</a>.</p>
       </div>
     </div>
   </footer>
@@ -845,46 +1018,66 @@
 
       mm.add('(prefers-reduced-motion: no-preference)', function () {
 
+        /* ---------- SCROLL PROGRESS BAR ---------- */
+        gsap.to('.scroll-progress', {
+          scaleX: 1, ease: 'none',
+          scrollTrigger: { start: 0, end: 'max', scrub: .3 }
+        });
+
         /* ---------- HERO INTRO ---------- */
         var heroCopy = gsap.utils.toArray('#home .hero-grid > div:first-child > [data-hero]');
         var floatCards = gsap.utils.toArray('.hero-art .float-card');
 
-        // Orbit: hand its centering to GSAP so rotation doesn't break translateX(-50%)
+        // Hand centering to GSAP so transforms don't fight the CSS translateX(-50%)
         gsap.set('.hero-art .orbit', { xPercent: -50, x: 0 });
+        gsap.set('.hero-monogram', { xPercent: -50, x: 0, rotation: -8 });
 
-        var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-        tl.from(heroCopy, { autoAlpha: 0, y: 40, duration: .85, stagger: .12 })
-          .from('.hero-art .orbit', { autoAlpha: 0, scale: .7, duration: 1.2 }, .15)
+        var tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
+        tl.from(heroCopy, { autoAlpha: 0, y: 70, duration: 1.1, stagger: .14 })
+          .from('.hero-art .orbit', { autoAlpha: 0, scale: .5, rotation: -40, duration: 1.5 }, .1)
           .fromTo('.hero-monogram',
-            { autoAlpha: 0, clipPath: 'inset(100% -30% -30% -30%)' },
-            { autoAlpha: 1, clipPath: 'inset(-30% -30% -30% -30%)', duration: 1.1, ease: 'expo.out',
-              onComplete: function () { gsap.set('.hero-monogram', { clearProps: 'clipPath' }); } }, .3)
-          .from('.hero-crown', { autoAlpha: 0, y: -20, duration: .7 }, .6)
-          .from(floatCards, { autoAlpha: 0, y: 50, duration: .9, stagger: .15 }, .55)
-          .from('.growth-bars span', { scaleY: 0, transformOrigin: 'bottom', duration: .6, stagger: .06, ease: 'back.out(1.6)' }, .9)
-          .from('.hero-247', { autoAlpha: 0, x: -30, duration: .7 }, .95)
-          .from('.hero-star', { autoAlpha: 0, scale: 0, duration: .7, ease: 'back.out(2)' }, 1)
-          .from('.hero-tagline', { autoAlpha: 0, duration: .6 }, 1.1);
+            { autoAlpha: 0, y: 70, clipPath: 'inset(100% -30% -30% -30%)' },
+            { autoAlpha: 1, y: 0, clipPath: 'inset(-30% -30% -30% -30%)', duration: 1.3,
+              onComplete: function () { gsap.set('.hero-monogram', { clearProps: 'clipPath' }); } }, .25)
+          .from('.hero-crown', { autoAlpha: 0, y: -50, rotation: 25, duration: .9, ease: 'back.out(2)' }, .7)
+          .from(floatCards, { autoAlpha: 0, y: 100, scale: .85, duration: 1.1, stagger: .2 }, .6)
+          .from('.growth-bars span', { scaleY: 0, transformOrigin: 'bottom', duration: .7, stagger: .08, ease: 'back.out(1.8)' }, 1)
+          .from('.hero-247', { autoAlpha: 0, x: -70, duration: .9 }, 1.05)
+          .from('.hero-star', { autoAlpha: 0, scale: 0, rotation: -180, duration: .9, ease: 'back.out(2)' }, 1.1)
+          .from('.hero-tagline', { autoAlpha: 0, y: 12, duration: .7 }, 1.2);
 
-        // Ambient loops
-        gsap.to('.hero-art .orbit', { rotation: 360, duration: 45, ease: 'none', repeat: -1 });
-        gsap.to('.hero-star', { rotation: 360, duration: 18, ease: 'none', repeat: -1 });
+        // Ambient loops (delayed so they start after the intro hands off)
+        gsap.to('.hero-art .orbit', { rotation: '+=360', duration: 40, ease: 'none', repeat: -1, delay: 1.7 });
+        gsap.to('.hero-star', { rotation: '+=360', duration: 14, ease: 'none', repeat: -1, delay: 2.1 });
         floatCards.forEach(function (card, i) {
-          gsap.to(card, { y: '-=12', duration: 2.4 + i * .5, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.6 + i * .3 });
+          gsap.to(card, { y: '-=16', rotation: '+=1.5', duration: 2.6 + i * .5, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.8 + i * .3 });
+        });
+
+        // Hero parallax: monogram sinks and cards drift as you scroll away
+        gsap.to('.hero-monogram', {
+          yPercent: 18, ease: 'none',
+          scrollTrigger: { trigger: '#home', start: 'top top', end: 'bottom top', scrub: .6 }
+        });
+        floatCards.forEach(function (card, i) {
+          gsap.to(card, {
+            yPercent: i % 2 ? -14 : -24, ease: 'none',
+            scrollTrigger: { trigger: '#home', start: 'top top', end: 'bottom top', scrub: .6 }
+          });
         });
 
         /* ---------- SCROLL REVEALS (uses existing data-aos / data-aos-delay attributes) ---------- */
         gsap.utils.toArray('[data-aos]').forEach(function (el) {
           var type = el.getAttribute('data-aos');
           var delay = (parseInt(el.getAttribute('data-aos-delay'), 10) || 0) / 1000;
-          var from = { autoAlpha: 0 };
-          if (type === 'fade-right') { from.x = -60; } else { from.y = 50; }
+          var from = { autoAlpha: 0, y: 80 };
+          if (type === 'fade-right') { from = { autoAlpha: 0, x: -90 }; }
+          if (el.tagName === 'ARTICLE') { from.scale = .94; }
 
           el.classList.add('gsap-anim'); // disable CSS transitions while GSAP animates
           gsap.fromTo(el, from, {
-            autoAlpha: 1, x: 0, y: 0,
-            duration: .9, delay: delay, ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+            autoAlpha: 1, x: 0, y: 0, scale: 1,
+            duration: 1.2, delay: delay, ease: 'expo.out',
+            scrollTrigger: { trigger: el, start: 'top 92%', once: true },
             onComplete: function () {
               gsap.set(el, { clearProps: 'transform,opacity,visibility' });
               el.classList.remove('gsap-anim'); // restore hover transitions
@@ -892,9 +1085,36 @@
           });
         });
 
+        /* ---------- COUNT-UP STATS ---------- */
+        gsap.utils.toArray('[data-count]').forEach(function (el) {
+          var end = parseFloat(el.getAttribute('data-count')) || 0;
+          var obj = { v: 0 };
+          el.textContent = '0';
+          gsap.to(obj, {
+            v: end, duration: 1.8, ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+            onUpdate: function () { el.textContent = Math.round(obj.v); }
+          });
+        });
+
+        /* ---------- PORTRAIT REVEAL ---------- */
+        gsap.fromTo('.portrait-frame',
+          { clipPath: 'inset(100% 0 0 0)' },
+          { clipPath: 'inset(0% 0 0 0)', duration: 1.4, ease: 'expo.out',
+            scrollTrigger: { trigger: '#about', start: 'top 70%', once: true },
+            onComplete: function () { gsap.set('.portrait-frame', { clearProps: 'clipPath' }); } });
+        gsap.fromTo('.portrait',
+          { scale: 1.18, y: 50 },
+          { scale: 1, y: 0, duration: 1.8, ease: 'expo.out',
+            scrollTrigger: { trigger: '#about', start: 'top 70%', once: true } });
+        gsap.from('.about-badge', {
+          autoAlpha: 0, scale: 0, rotation: 12, duration: .9, delay: .6, ease: 'back.out(2)',
+          scrollTrigger: { trigger: '#about', start: 'top 70%', once: true }
+        });
+
         /* ---------- FOOTER WORDMARK DRIFT ---------- */
-        gsap.fromTo('.footer-wordmark', { xPercent: 4 }, {
-          xPercent: -8, ease: 'none',
+        gsap.fromTo('.footer-wordmark', { xPercent: 6 }, {
+          xPercent: -12, ease: 'none',
           scrollTrigger: { trigger: 'footer', start: 'top bottom', end: 'bottom bottom', scrub: 1 }
         });
       });
