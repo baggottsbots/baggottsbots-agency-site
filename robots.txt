@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://baggottsbots.github.io/baggottsbots-agency-site/sitemap.xml
+Sitemap: https://baggottsbots.com/sitemap.xml
