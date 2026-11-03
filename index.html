@@ -33,6 +33,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Hide animated elements only while JS is running; failsafe reveals everything after 4s no matter what -->
+  <script>
+    (function(){
+      var root = document.documentElement;
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduce) {
+        root.classList.add('anim-pending');
+        setTimeout(function(){ root.classList.remove('anim-pending'); }, 4000);
+      }
+    })();
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -131,7 +143,6 @@
   </script>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <script>
     tailwind.config = {
       theme: {
@@ -156,7 +167,7 @@
   
   <noscript>
     <style>
-      [data-aos] { opacity: 1 !important; transform: none !important; }
+      [data-aos], [data-hero] { opacity: 1 !important; transform: none !important; }
       .js-only { display: none !important; }
     </style>
   </noscript>
@@ -194,6 +205,7 @@
   if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
 }catch(e){}})();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 <script data-field-replace>
 (function(){
@@ -516,24 +528,24 @@
     <section id="home" data-section="hero" class="relative overflow-hidden">
       <div class="container-wide hero-grid pb-12 pt-16 md:pb-16 md:pt-20">
         <div class="relative z-10">
-          <div class="eyebrow mb-7 flex items-center gap-3 text-gold"><span class="h-px w-7 bg-gold"></span>Digital marketing agency in Bluffton, South Carolina</div>
-          <h1 class="display text-[77px] sm:text-[100px] lg:text-[118px] xl:text-[136px]">Marketing<br>that hits<br><span class="text-gold">different.</span><span class="text-gold">*</span></h1>
-          <p class="mt-7 max-w-[440px] text-sm leading-[1.85] text-muted md:text-[15px]">BaggottsBOTs is a digital marketing agency for Lowcountry businesses, offering video production, social media, paid ads, and AI automation. Big-agency energy with local-business focus. We turn scrolls into conversations, and conversations into customers, with content, ads, and AI that never clocks out.</p>
-          <a href="#strategy" class="btn btn-gold mt-8">Let's build your growth plan <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
-          <div class="mt-5 flex items-center gap-2 text-[10px] text-muted"><svg class="icon h-3.5 w-3.5 text-gold"><use href="#i-check"/></svg>Free strategy call. Real ideas. Zero pressure.</div>
+          <div data-hero class="eyebrow mb-7 flex items-center gap-3 text-gold"><span class="h-px w-7 bg-gold"></span>Digital marketing agency in Bluffton, South Carolina</div>
+          <h1 data-hero class="display text-[77px] sm:text-[100px] lg:text-[118px] xl:text-[136px]">Marketing<br>that hits<br><span class="text-gold">different.</span><span class="text-gold">*</span></h1>
+          <p data-hero class="mt-7 max-w-[440px] text-sm leading-[1.85] text-muted md:text-[15px]">BaggottsBOTs is a digital marketing agency for Lowcountry businesses, offering video production, social media, paid ads, and AI automation. Big-agency energy with local-business focus. We turn scrolls into conversations, and conversations into customers, with content, ads, and AI that never clocks out.</p>
+          <a data-hero href="#strategy" class="btn btn-gold mt-8">Let's build your growth plan <svg class="icon h-4 w-4"><use href="#i-up-right"/></svg></a>
+          <div data-hero class="mt-5 flex items-center gap-2 text-[10px] text-muted"><svg class="icon h-3.5 w-3.5 text-gold"><use href="#i-check"/></svg>Free strategy call. Real ideas. Zero pressure.</div>
         </div>
         <div class="hero-art" aria-label="Creative strategy, human connection, and AI automation working together">
-          <div class="orbit" aria-hidden="true"></div>
-          <div class="absolute left-1/2 top-4 -translate-x-1/2 text-gold" aria-hidden="true"><svg class="icon h-12 w-12 rotate-[-8deg]"><use href="#i-crown"/></svg></div>
-          <div class="hero-monogram" aria-hidden="true">BB.</div>
-          <div class="float-card left-0 top-[84px] w-[195px] rotate-[-7deg] rounded-lg p-4">
+          <div class="orbit" data-hero aria-hidden="true"></div>
+          <div class="hero-crown absolute left-1/2 top-4 -translate-x-1/2 text-gold" data-hero aria-hidden="true"><svg class="icon h-12 w-12 rotate-[-8deg]"><use href="#i-crown"/></svg></div>
+          <div class="hero-monogram" data-hero aria-hidden="true">BB.</div>
+          <div class="float-card left-0 top-[84px] w-[195px] rotate-[-7deg] rounded-lg p-4" data-hero>
             <div class="mb-4 flex items-center justify-between"><span class="eyebrow !text-[8px] text-muted">The growth stack</span><svg class="icon h-4 w-4 text-gold"><use href="#i-bolt"/></svg></div>
-            <div class="flex items-end gap-1.5" aria-hidden="true">
+            <div class="growth-bars flex items-end gap-1.5" aria-hidden="true">
               <span class="h-6 w-full bg-gold/20"></span><span class="h-9 w-full bg-gold/30"></span><span class="h-8 w-full bg-gold/40"></span><span class="h-14 w-full bg-gold/60"></span><span class="h-16 w-full bg-gold/80"></span><span class="h-[82px] w-full bg-gold"></span>
             </div>
             <div class="mt-3 flex justify-between text-[9px] text-muted"><span>Attention</span><span class="text-gold">→ Action</span></div>
           </div>
-          <div class="float-card right-[-5px] top-[238px] w-[238px] rotate-[6deg] rounded-lg p-4">
+          <div class="float-card right-[-5px] top-[238px] w-[238px] rotate-[6deg] rounded-lg p-4" data-hero>
             <div class="flex items-center gap-2.5">
               <span class="flex h-8 w-8 items-center justify-center rounded-full bg-gold/15 text-gold"><svg class="icon h-4 w-4"><use href="#i-bot"/></svg></span>
               <div><div class="text-[11px] font-bold">Your AI wingman</div><div class="mt-1 flex items-center gap-1.5 text-[8px] text-muted"><span class="h-1 w-1 rounded-full bg-lime-400"></span>Always on. Even when you're not.</div></div>
@@ -541,12 +553,12 @@
             <div class="mt-3 rounded bg-white/5 px-3 py-2.5 text-[10px] leading-relaxed text-stone-300">"Absolutely. I can help you find the right service. What do you need?"</div>
             <div class="mt-2 text-right text-[8px] text-gold">An example of a better first reply ↗</div>
           </div>
-          <div class="absolute bottom-7 left-3 flex rotate-[-5deg] items-center gap-3 border-l-2 border-gold py-1 pl-3 md:bottom-10">
+          <div class="hero-247 absolute bottom-7 left-3 flex rotate-[-5deg] items-center gap-3 border-l-2 border-gold py-1 pl-3 md:bottom-10" data-hero>
             <span class="font-display text-5xl font-bold text-gold">24/7</span>
             <span class="eyebrow !text-[8px] !leading-[1.7] text-muted">Your business sleeps.<br>Your marketing shouldn't.</span>
           </div>
-          <span class="absolute right-5 top-14 font-display text-6xl text-gold" aria-hidden="true">✳</span>
-          <div class="absolute bottom-1 right-5 text-[8px] uppercase tracking-[.2em] text-muted">Human creativity × artificial intelligence</div>
+          <span class="hero-star absolute right-5 top-14 font-display text-6xl text-gold" data-hero aria-hidden="true">✳</span>
+          <div class="hero-tagline absolute bottom-1 right-5 text-[8px] uppercase tracking-[.2em] text-muted" data-hero>Human creativity × artificial intelligence</div>
         </div>
       </div>
       <div class="border-y border-white/10 bg-[#151513]">
@@ -624,7 +636,7 @@
           <div class="absolute -left-3 -top-3 h-24 w-24 border-l-2 border-t-2 border-gold" aria-hidden="true"></div>
           <div class="relative overflow-hidden">
             <img src="https://paymegpt.com/objects/quick-uploads/2/c378e409731d71c9.png" alt="Ryan Baggott, founder of BaggottsBOTs Digital Marketing Agency and PayMeGPT, the Chatbot King" class="portrait !h-auto !min-h-[460px] !object-contain !object-bottom" style="background: none; filter: drop-shadow(0 20px 40px #000000aa) drop-shadow(0 6px 14px #8A2BFF40); height: auto; min-height: 460px;" loading="lazy" width="640" height="650">
-            <div class="bb-cap absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/60 to-transparent px-7 pb-7 pt-24">
+            <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/60 to-transparent px-7 pb-7 pt-24">
               <div class="eyebrow mb-2 !text-[9px] text-gold">Builder. Educator. Your unfair advantage.</div>
               <div class="font-display text-5xl font-bold uppercase">The Chatbot King<span class="text-gold">.</span></div>
             </div>
@@ -803,10 +815,10 @@
           <a class="text-muted hover:text-gold" href="#proof">The receipts</a>
           <a class="text-muted hover:text-gold" href="#areas">Where we work</a>
           <a class="text-muted hover:text-gold" href="https://baggottsbots.github.io/baggottsbots-agency-site/blog/">Blog</a>
-          <a class="font-bold text-gold" href="#strategy">Let's talk <svg viewBox="0 0 24 24" class="ml-1 inline h-3 w-3" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+          <a class="font-bold text-gold" href="#strategy">Let's talk ↗</a>
         </nav>
-        <div class="flex items-center gap-3"><a href="https://www.facebook.com/BaggottsBots" target="_blank" rel="noopener" aria-label="BaggottsBOTs on Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.youtube.com/@baggottsbotsdigitalmarketi9524" target="_blank" rel="noopener" aria-label="BaggottsBOTs on YouTube" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a></div>
-        </div>
+        <a href="https://www.facebook.com/BaggottsBots" target="_blank" rel="noopener" aria-label="BaggottsBOTs on Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+      </div>
       <div class="footer-wordmark mt-14 select-none font-display font-extrabold uppercase" aria-hidden="true">Marketing that hits different.</div>
       <div class="mt-10 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-[9px] text-muted sm:flex-row">
         <p>© 2026 BaggottsBOTs Digital Marketing Agency. All rights reserved.</p>
@@ -815,13 +827,88 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script>
-    if (window.AOS) {
-      AOS.init({ once: true, duration: 700, offset: 80 });
-    } else {
-      document.querySelectorAll('[data-aos]').forEach(el => el.removeAttribute('data-aos'));
-    }
+    (function () {
+      var root = document.documentElement;
+      function revealAll() { root.classList.remove('anim-pending'); }
+
+      if (!window.gsap || !window.ScrollTrigger) { revealAll(); return; }
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Un-hide first, then GSAP immediately sets start states in the same frame (no flash)
+      revealAll();
+
+      var mm = gsap.matchMedia();
+
+      mm.add('(prefers-reduced-motion: no-preference)', function () {
+
+        /* ---------- HERO INTRO ---------- */
+        var heroCopy = gsap.utils.toArray('#home .hero-grid > div:first-child > [data-hero]');
+        var floatCards = gsap.utils.toArray('.hero-art .float-card');
+
+        // Orbit: hand its centering to GSAP so rotation doesn't break translateX(-50%)
+        gsap.set('.hero-art .orbit', { xPercent: -50, x: 0 });
+
+        var tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+        tl.from(heroCopy, { autoAlpha: 0, y: 40, duration: .85, stagger: .12 })
+          .from('.hero-art .orbit', { autoAlpha: 0, scale: .7, duration: 1.2 }, .15)
+          .fromTo('.hero-monogram',
+            { autoAlpha: 0, clipPath: 'inset(100% -30% -30% -30%)' },
+            { autoAlpha: 1, clipPath: 'inset(-30% -30% -30% -30%)', duration: 1.1, ease: 'expo.out',
+              onComplete: function () { gsap.set('.hero-monogram', { clearProps: 'clipPath' }); } }, .3)
+          .from('.hero-crown', { autoAlpha: 0, y: -20, duration: .7 }, .6)
+          .from(floatCards, { autoAlpha: 0, y: 50, duration: .9, stagger: .15 }, .55)
+          .from('.growth-bars span', { scaleY: 0, transformOrigin: 'bottom', duration: .6, stagger: .06, ease: 'back.out(1.6)' }, .9)
+          .from('.hero-247', { autoAlpha: 0, x: -30, duration: .7 }, .95)
+          .from('.hero-star', { autoAlpha: 0, scale: 0, duration: .7, ease: 'back.out(2)' }, 1)
+          .from('.hero-tagline', { autoAlpha: 0, duration: .6 }, 1.1);
+
+        // Ambient loops
+        gsap.to('.hero-art .orbit', { rotation: 360, duration: 45, ease: 'none', repeat: -1 });
+        gsap.to('.hero-star', { rotation: 360, duration: 18, ease: 'none', repeat: -1 });
+        floatCards.forEach(function (card, i) {
+          gsap.to(card, { y: '-=12', duration: 2.4 + i * .5, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.6 + i * .3 });
+        });
+
+        /* ---------- SCROLL REVEALS (uses existing data-aos / data-aos-delay attributes) ---------- */
+        gsap.utils.toArray('[data-aos]').forEach(function (el) {
+          var type = el.getAttribute('data-aos');
+          var delay = (parseInt(el.getAttribute('data-aos-delay'), 10) || 0) / 1000;
+          var from = { autoAlpha: 0 };
+          if (type === 'fade-right') { from.x = -60; } else { from.y = 50; }
+
+          el.classList.add('gsap-anim'); // disable CSS transitions while GSAP animates
+          gsap.fromTo(el, from, {
+            autoAlpha: 1, x: 0, y: 0,
+            duration: .9, delay: delay, ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+            onComplete: function () {
+              gsap.set(el, { clearProps: 'transform,opacity,visibility' });
+              el.classList.remove('gsap-anim'); // restore hover transitions
+            }
+          });
+        });
+
+        /* ---------- FOOTER WORDMARK DRIFT ---------- */
+        gsap.fromTo('.footer-wordmark', { xPercent: 4 }, {
+          xPercent: -8, ease: 'none',
+          scrollTrigger: { trigger: 'footer', start: 'top bottom', end: 'bottom bottom', scrub: 1 }
+        });
+      });
+
+      // Recalculate trigger positions once Tailwind, fonts, images and the form embed settle
+      window.addEventListener('load', function () { ScrollTrigger.refresh(); });
+      if ('ResizeObserver' in window) {
+        var t;
+        new ResizeObserver(function () {
+          clearTimeout(t);
+          t = setTimeout(function () { ScrollTrigger.refresh(); }, 200);
+        }).observe(document.body);
+      }
+    })();
 
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -880,6 +967,10 @@
 
 <script>
 (function(){var pop=document.getElementById('bbPop');var back=document.getElementById('bbBack');var closeBtn=document.getElementById('bbClose');var seen=false;try{seen=sessionStorage.getItem('bbPopSeen')==='1'}catch(e){}function show(){back.classList.add('bb-show');pop.classList.add('bb-show');pop.setAttribute('aria-hidden','false')}function hide(){back.classList.remove('bb-show');pop.classList.remove('bb-show');pop.setAttribute('aria-hidden','true');try{sessionStorage.setItem('bbPopSeen','1')}catch(e){}}if(!seen)setTimeout(show,7000);closeBtn.addEventListener('click',hide);back.addEventListener('click',hide);document.addEventListener('keydown',function(e){if(e.key==='Escape'&&pop.classList.contains('bb-show'))hide()});pop.querySelectorAll('a').forEach(function(a){a.addEventListener('click',hide)})})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 700, offset: 80 });
 </script>
 </body>
 </html>
