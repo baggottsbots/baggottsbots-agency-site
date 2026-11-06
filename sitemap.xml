@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://baggottsbots.com/services/</loc>
-    <lastmod>2026-11-06T03:04:59.901Z</lastmod>
+    <loc>https://baggottsbots.com/contact/</loc>
+    <lastmod>2026-11-06T03:05:18.248Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://baggottsbots.com/</loc>
-    <lastmod>2026-11-06T03:04:51.841Z</lastmod>
+    <lastmod>2026-11-06T03:05:14.782Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/</loc>
+    <lastmod>2026-11-06T03:04:59.901Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -28,11 +33,6 @@
   <url>
     <loc>https://baggottsbots.com/blog/</loc>
     <lastmod>2026-11-06T03:03:40.115Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/contact/</loc>
-    <lastmod>2026-11-06T03:03:39.687Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
