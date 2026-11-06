@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://baggottsbots.com/services/</loc>
-    <lastmod>2026-11-04T23:44:28.104Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/contact/</loc>
-    <lastmod>2026-11-04T23:44:20.426Z</lastmod>
+    <loc>https://baggottsbots.com/</loc>
+    <lastmod>2026-11-06T02:56:17.151Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://baggottsbots.com/blog/nfc-cards-go-wallet/</loc>
-    <lastmod>2026-11-04T23:44:12.847Z</lastmod>
+    <lastmod>2026-11-06T02:55:55.055Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://baggottsbots.com/blog/is-your-website-ready-for-2027/</loc>
-    <lastmod>2026-11-04T23:43:59.845Z</lastmod>
+    <lastmod>2026-11-06T02:54:33.851Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://baggottsbots.com/blog/</loc>
-    <lastmod>2026-11-04T23:43:47.716Z</lastmod>
+    <lastmod>2026-11-06T02:54:33.424Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://baggottsbots.com/</loc>
-    <lastmod>2026-11-04T23:43:36.023Z</lastmod>
+    <loc>https://baggottsbots.com/contact/</loc>
+    <lastmod>2026-11-06T02:54:33.033Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/</loc>
+    <lastmod>2026-11-06T02:54:32.594Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
