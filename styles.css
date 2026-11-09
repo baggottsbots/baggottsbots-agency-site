@@ -249,6 +249,60 @@
     .article p { font-size: 16px; line-height: 1.9; color: #c9c9bf; margin: 0 0 22px; }
     .article h2 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: 800; font-size: 36px; line-height: 1; margin: 48px 0 18px; }
     .article h2 span { color: #FF00D4; }
+    .article h3 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: 700; font-size: 24px; line-height: 1.1; margin: 28px 0 10px; color: #f2f0e8; }
+    .article ul, .article ol { margin: 0 0 24px; padding: 0; list-style: none; }
+    .article li { position: relative; padding-left: 26px; margin-bottom: 12px; font-size: 16px; line-height: 1.8; color: #c9c9bf; }
+    .article ul li::before { content: ""; position: absolute; left: 0; top: 12px; width: 10px; height: 2px; background: #FF00D4; }
+    .article ol { counter-reset: step; }
+    .article ol li { padding-left: 40px; }
+    .article ol li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 2px; width: 26px; height: 26px; border: 1px solid #FF00D4; color: #FF00D4; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .article strong { color: #f2f0e8; }
+    .article a { color: #FF00D4; text-decoration: underline; text-underline-offset: 3px; }
+    .article a:hover { filter: brightness(1.2); }
+    .article figure { margin: 36px 0; }
+    .article figcaption { margin-top: 10px; font-size: 12px; line-height: 1.7; color: #8d8d84; }
+    .pull { border-left: 3px solid #FF00D4; padding: 6px 0 6px 22px; margin: 34px 0; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; text-transform: uppercase; font-size: 30px; line-height: 1.05; color: #f2f0e8; }
+    .card { border: 1px solid #33332d; background: #151514; padding: 28px; }
+    .live-card { border: 1px solid #FF00D466; background: linear-gradient(135deg, #1c1520, #151514 60%); padding: 28px; margin: 34px 0; box-shadow: 0 0 40px #8A2BFF1f; }
+    .live-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #ff2d2d; box-shadow: 0 0 10px #ff2d2d; animation: pulse 1.6s infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+    .video-wrap { position: relative; width: 100%; aspect-ratio: 16 / 9; border: 1px solid #33332d; background: #000; }
+    .video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .faq details { border: 1px solid #33332d; background: #151514; padding: 18px 22px; margin-bottom: 12px; }
+    .faq summary { cursor: pointer; font-weight: 700; font-size: 16px; color: #f2f0e8; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; color: #FF00D4; font-size: 22px; line-height: 1; }
+    .faq details[open] summary::after { content: "\2212"; }
+    .faq details p { margin: 14px 0 0; }
+    .tag { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; color: #f2f0e8; }
+    .tag::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #FF00D4; box-shadow: 0 0 8px #FF00D480; flex-shrink: 0; }
+    .toc a { color: #c9c9bf; text-decoration: none; }
+    .toc a:hover { color: #FF00D4; }
+    .related { display: block; border: 1px solid #33332d; background: #151514; padding: 22px; transition: border-color .25s, background .25s, transform .25s; }
+    .related:hover { border-color: #FF00D480; background: #1c1520; transform: translateY(-3px); }
+    .footer-wordmark { font-size: clamp(60px, 14vw, 200px); line-height: .8; letter-spacing: -.025em; color: #25251f; white-space: nowrap; }
+    @media (max-width: 767px) { .container-wide { width: calc(100% - 64px + 24px); } .article h2 { font-size: 30px; } .pull { font-size: 24px; } }
+    @media (min-width: 1024px) { #mobile-menu { display: none !important; } }
+
+:root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #10100f; color: #f2f0e8; }
+    ::selection { background: #FF00D4; color: #f2f0e8; }
+    :focus-visible { outline: 2px solid #FF00D4; outline-offset: 5px; }
+    .container-wide { width: min(1280px, calc(100% - 64px)); margin-inline: auto; }
+    .container-read { width: min(760px, calc(100% - 40px)); margin-inline: auto; }
+    .eyebrow { font-size: 11px; letter-spacing: .2em; font-weight: 700; text-transform: uppercase; }
+    .display { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; text-transform: uppercase; line-height: .9; letter-spacing: -.018em; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 15px 23px; font-size: 12px; font-weight: 700; transition: transform .2s, filter .2s; }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-gold { background: linear-gradient(90deg, #FF00D4, #8A2BFF 55%, #2D5BFF); color: #f2f0e8; }
+    .btn-gold:hover { filter: brightness(1.12); box-shadow: 0 0 28px #FF00D466; }
+    .nav-link { font-size: 11px; font-weight: 600; color: #bdbdb3; transition: color .2s; }
+    .nav-link:hover, .nav-link[aria-current="page"] { color: #FF00D4; }
+    .noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' opacity='.045' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+    .article p { font-size: 16px; line-height: 1.9; color: #c9c9bf; margin: 0 0 22px; }
+    .article h2 { font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; font-weight: 800; font-size: 36px; line-height: 1; margin: 48px 0 18px; }
+    .article h2 span { color: #FF00D4; }
     .article ul { margin: 0 0 24px; padding: 0; list-style: none; }
     .article li { position: relative; padding-left: 26px; margin-bottom: 12px; font-size: 16px; line-height: 1.8; color: #c9c9bf; }
     .article li::before { content: ""; position: absolute; left: 0; top: 12px; width: 10px; height: 2px; background: #FF00D4; }
