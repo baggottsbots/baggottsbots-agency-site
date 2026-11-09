@@ -207,6 +207,17 @@
     @media (max-width: 767px) { .award-stage { height: 380px; } .award-meta { padding: 24px 22px 26px; } .award-floor { bottom: 34px; } }
     @media (prefers-reduced-motion: reduce) { .award-float, .award-floor, .award-shine, .award-stage::before, .glint { animation: none !important; } .award-enter { opacity: 1; transform: none; filter: none; transition: none; } .glint { opacity: 0; } }
 
+body > :not(#not-found):not(script):not(style) { display: none !important; }
+    #not-found {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      background: radial-gradient(ellipse at 80% 20%, #8A2BFF26, transparent 55%), radial-gradient(ellipse at 10% 90%, #2D5BFF1a, transparent 55%);
+    }
+
 :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #10100f; color: #f2f0e8; }
