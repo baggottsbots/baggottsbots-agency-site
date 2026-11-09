@@ -116,6 +116,21 @@
 .bb-home{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:110px;height:4px;border-radius:4px;background:#f2f0e8aa}
 @media (prefers-reduced-motion: reduce){.bb-pop,.bb-back{transition:none}}
 
+/* All rules below are scoped to #not-found so they cannot affect other pages when the sync merges styles into the shared stylesheet. */
+    #not-found {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      color: #f2f0e8;
+      background: radial-gradient(ellipse at 80% 20%, #8A2BFF26, transparent 55%), radial-gradient(ellipse at 10% 90%, #2D5BFF1a, transparent 55%), #10100f;
+    }
+    #not-found .nf-display { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; text-transform: uppercase; line-height: .9; letter-spacing: -.018em; }
+    #not-found .nf-btn { display: inline-flex; align-items: center; justify-content: center; gap: 14px; min-height: 52px; padding: 15px 23px; font-size: 12px; font-weight: 700; color: #f2f0e8; background: linear-gradient(90deg, #FF00D4, #8A2BFF 55%, #2D5BFF); transition: transform .2s, filter .2s, box-shadow .2s; }
+    #not-found .nf-btn:hover { transform: translateY(-3px); filter: brightness(1.12); box-shadow: 0 0 28px #FF00D466; }
+
 :root { color-scheme: dark; }
     * { box-sizing: border-box; }
     body { margin: 0; background: #10100f; color: #f2f0e8; }
@@ -206,17 +221,6 @@
     @keyframes twinkle { 0%,100% { opacity: 0; transform: scale(.3) rotate(0); } 50% { opacity: 1; transform: scale(1) rotate(45deg); } }
     @media (max-width: 767px) { .award-stage { height: 380px; } .award-meta { padding: 24px 22px 26px; } .award-floor { bottom: 34px; } }
     @media (prefers-reduced-motion: reduce) { .award-float, .award-floor, .award-shine, .award-stage::before, .glint { animation: none !important; } .award-enter { opacity: 1; transform: none; filter: none; transition: none; } .glint { opacity: 0; } }
-
-body > :not(#not-found):not(script):not(style) { display: none !important; }
-    #not-found {
-      min-height: 100vh;
-      min-height: 100svh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 24px;
-      background: radial-gradient(ellipse at 80% 20%, #8A2BFF26, transparent 55%), radial-gradient(ellipse at 10% 90%, #2D5BFF1a, transparent 55%);
-    }
 
 :root { color-scheme: dark; }
     * { box-sizing: border-box; }
