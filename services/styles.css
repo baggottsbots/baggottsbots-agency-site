@@ -1,0 +1,43 @@
+:root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #10100f; color: #f2f0e8; }
+    ::selection { background: #FF00D4; color: #f2f0e8; }
+    :focus-visible { outline: 2px solid #FF00D4; outline-offset: 5px; }
+    .container-wide { width: min(1280px, calc(100% - 64px)); margin-inline: auto; }
+    .eyebrow { font-size: 11px; letter-spacing: .2em; font-weight: 700; text-transform: uppercase; }
+    .display { font-family: 'Barlow Condensed', sans-serif; font-weight: 800; text-transform: uppercase; line-height: .9; letter-spacing: -.018em; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 26px; min-height: 52px; padding: 15px 23px; font-size: 12px; font-weight: 700; transition: background .2s, transform .2s, border-color .2s; }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-gold { background: linear-gradient(90deg, #FF00D4, #8A2BFF 55%, #2D5BFF); color: #f2f0e8; border: 1px solid transparent; }
+    .btn-gold:hover { filter: brightness(1.12); box-shadow: 0 0 28px #FF00D466; }
+    .icon { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+    .nav-link { font-size: 11px; font-weight: 600; color: #bdbdb3; transition: color .2s; }
+    .nav-link:hover, .nav-link[aria-current="page"] { color: #FF00D4; }
+    .noise { background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' opacity='.045' filter='url(%23n)' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+    .service-card { position: relative; overflow: hidden; border: 1px solid #ffffff14; border-radius: 16px; padding: 36px; background: linear-gradient(145deg, #1c1c1b, #151514); box-shadow: 0 12px 36px #00000014; transition: border-color .25s, background .25s, transform .25s, box-shadow .25s; }
+    .service-card::before { content: ""; position: absolute; top: 0; left: 36px; width: 56px; height: 2px; background: linear-gradient(90deg, #FF00D4, #8A2BFF, #2D5BFF); }
+    .service-card:hover { border-color: #FF00D450; background: linear-gradient(145deg, #241a29, #17151c); transform: translateY(-4px); box-shadow: 0 18px 44px #00000030; }
+    .service-card > p:not(.eyebrow) { font-size: 14px; line-height: 1.85; }
+    .service-card ul { border-top: 1px solid #ffffff10; padding-top: 22px; font-size: 13px; }
+    .service-card li { position: relative; padding-left: 18px; line-height: 1.65; }
+    .service-card li::before { content: ""; position: absolute; left: 0; top: .6em; width: 5px; height: 5px; border-radius: 50%; background: #b572ff; }
+    .btn { border-radius: 8px; }
+    header { box-shadow: 0 8px 30px #00000020; }
+    #mobile-menu a { border-radius: 6px; padding-inline: 12px; transition: background .2s, color .2s; }
+    #mobile-menu a:hover { background: #ffffff08; color: #FF00D4; }
+    main > section:first-child { border-bottom: 1px solid #ffffff0d; }
+    main > section:first-child h1 { max-width: 1000px; text-wrap: balance; }
+    h2 { text-wrap: balance; }
+    main ol > li { padding-bottom: 24px; border-bottom: 1px solid #ffffff10; }
+    main ol > li:last-child { padding-bottom: 0; border-bottom: 0; }
+    main ol p { font-size: 14px !important; }
+    @media (max-width: 767px) {
+      .service-card { padding: 28px 24px; }
+      .service-card::before { left: 24px; }
+      main > section:first-child { padding-top: 56px; padding-bottom: 56px; }
+      main > section:first-child h1 { font-size: clamp(48px, 12vw, 72px); }
+    }
+    .footer-wordmark { font-size: clamp(60px, 14vw, 200px); line-height: .8; letter-spacing: -.025em; color: #25251f; white-space: nowrap; }
+    @media (min-width: 1024px) { #mobile-menu { display: none !important; } }
+    @media (max-width: 767px) { .container-wide { width: calc(100% - 40px); } }
+    @media (prefers-reduced-motion: reduce) { [data-aos] { opacity: 1 !important; transform: none !important; } }
