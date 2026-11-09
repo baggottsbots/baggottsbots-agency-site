@@ -453,12 +453,12 @@
     .stat span { display: block; margin-top: 8px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: #a7a79d; }
     .tag { display: inline-flex; align-items: center; gap: 8px; font-size: 10px; letter-spacing: .18em; font-weight: 700; text-transform: uppercase; color: #f2f0e8; }
     .tag::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: #FF00D4; box-shadow: 0 0 8px #FF00D480; flex-shrink: 0; }
-    details { border-top: 1px solid #33332d; padding: 18px 0; }
-    details summary { cursor: pointer; font-weight: 700; font-size: 16px; color: #f2f0e8; list-style: none; padding-right: 28px; position: relative; }
-    details summary::-webkit-details-marker { display: none; }
-    details summary::after { content: "+"; position: absolute; right: 0; top: 0; color: #FF00D4; }
-    details[open] summary::after { content: "\2013"; }
-    details p { margin-top: 12px !important; }
+    details.wv-qa { border-top: 1px solid #33332d; padding: 18px 0; }
+    details.wv-qa summary { cursor: pointer; font-weight: 700; font-size: 16px; color: #f2f0e8; list-style: none; padding-right: 28px; position: relative; }
+    details.wv-qa summary::-webkit-details-marker { display: none; }
+    details.wv-qa summary::after { content: "+"; position: absolute; right: 0; top: 0; color: #FF00D4; }
+    details.wv-qa[open] summary::after { content: "\2013"; }
+    details.wv-qa p { margin-top: 12px !important; }
     .footer-wordmark { font-size: clamp(60px, 14vw, 200px); line-height: .8; letter-spacing: -.025em; color: #25251f; white-space: nowrap; }
     @media (max-width: 767px) { .container-wide { width: calc(100% - 40px); } }
     @media (min-width: 1024px) { #mobile-menu { display: none !important; } }
