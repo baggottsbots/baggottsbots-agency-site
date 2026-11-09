@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/blog/winvotes-2026-beaufort-county-elections/</loc>
+    <lastmod>2026-11-09T02:30:54.845Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/blog/nfc-cards-go-wallet/</loc>
     <lastmod>2026-11-09T02:30:38.447Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,11 +23,6 @@
   <url>
     <loc>https://baggottsbots.com/about/</loc>
     <lastmod>2026-11-09T02:29:38.707Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/blog/winvotes-2026-beaufort-county-elections/</loc>
-    <lastmod>2026-11-09T02:20:44.853Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
