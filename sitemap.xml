@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/404/</loc>
+    <lastmod>2026-11-09T19:44:48.646Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/blog/going-live-builds-customer-trust/</loc>
-    <lastmod>2026-11-09T19:39:39.814Z</lastmod>
+    <lastmod>2026-11-09T19:40:09.652Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://baggottsbots.com/about/</loc>
     <lastmod>2026-11-09T19:33:55.826Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/404/</loc>
-    <lastmod>2026-11-09T19:33:42.024Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
