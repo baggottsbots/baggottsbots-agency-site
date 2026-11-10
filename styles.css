@@ -35,11 +35,6 @@
     .service-card:hover .service-arrow { transform: translate(3px, -3px); }
     .service-card .service-link { transition: color .2s; }
     .service-card .service-link:hover { color: #f2f0e8; }
-    .service-card.cta-card, .service-card.cta-card:hover, .service-card.cta-card:focus-within { background: #FF00D4 !important; border-color: #FF00D4 !important; color: #10100f !important; }
-    .service-card.cta-card h3, .service-card.cta-card a, .service-card.cta-card .icon { color: #10100f !important; }
-    .service-card.cta-card p { color: rgba(16,16,15,.78) !important; }
-    .service-card.cta-card a { border-top-color: rgba(16,16,15,.25) !important; }
-
     /* Portrait: desktop shows the full cutout, tablet and phone fill a tall frame with the head anchored at the top */
     .portrait-frame { position: relative; overflow: hidden; }
     .portrait { display: block; width: 100%; height: auto; min-height: 460px; object-fit: contain; object-position: bottom center; transform-origin: bottom center; filter: drop-shadow(0 20px 40px #000000aa) drop-shadow(0 6px 14px #8A2BFF40); }
