@@ -330,7 +330,6 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <!-- End SEO Meta Tags -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 <script data-lp-token-hydrate>
 (function(){try{
   var slug="digital-marketing-agency-bluffton-sc";
@@ -351,6 +350,115 @@
   if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
 }catch(e){}})();
 </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+<!-- TRACKING:HEAD START (managed by Coding Agent — do not edit) -->
+<!-- Custom Head HTML -->
+<script type="application/json" id="pmg-google-ads-settings">{"enabled":true,"id":"AW-652189019","label":"O60VCNLU8rgYENu6_rYC","trigger":"native_form","targetId":"1020"}</script>
+
+
+<!-- pmg-google-ads-runtime -->
+<script>window.__pmgAdsConfig={"enabled":true,"id":"AW-652189019","label":"O60VCNLU8rgYENu6_rYC","trigger":"native_form","targetId":"1020","pageId":8816,"apiOrigins":["https://paymegpt.com"]};
+/* Injected inline on opted-in pages, including GitHub exports. No customer PII. */
+(function () {
+  'use strict';
+  var cfg = window.__pmgAdsConfig;
+  if (!cfg || !cfg.enabled || window.PMGAds) return;
+  var seen = new Set();
+  var fields = ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','gclid','gbraid','wbraid'];
+  var attribution = {};
+  try {
+    var url = new URL(location.href);
+    fields.forEach(function (key) {
+      var value = url.searchParams.get(key);
+      if (value) attribution[key] = value.slice(0, 300);
+    });
+    if (Object.keys(attribution).length) {
+      attribution.landing_page = url.origin + url.pathname;
+      attribution.captured_at = new Date().toISOString();
+    }
+  } catch (_) {}
+  function report(id) {
+    if (!id || seen.has(id)) return;
+    // Mark before enqueueing: native events and the fetch observer may repeat.
+    seen.add(id);
+    try {
+      window.gtag('event', 'conversion', {
+        send_to: cfg.id + '/' + cfg.label,
+        transaction_id: id
+      });
+      // Enqueued is NOT verified delivery. Tag Assistant is the verification tool.
+      window.dispatchEvent(new CustomEvent('pmg-ads:queued', { detail: { submissionId: id } }));
+    } catch (_) { /* Tracking must never fail a form submission. */ }
+  }
+  window.PMGAds = {
+    attribution: function () { return Object.assign({}, attribution); }
+  };
+  // Install one Google loader; reuse GA4 or an existing gtag loader. Never grant
+  // consent here: the site's CMP remains responsible for Google consent mode.
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(cfg.id);
+    document.head.appendChild(script);
+    window.gtag('js', new Date());
+  }
+  window.gtag('config', cfg.id);
+  if (cfg.trigger === 'native_form') {
+    // The embed loader authenticates the iframe's source + origin before
+    // publishing this event. Never listen directly to arbitrary postMessage.
+    window.addEventListener('paymegpt-form:submitted', function (event) {
+      var data = event.detail || {};
+      if (String(data.formId) === cfg.targetId && /^[1-9]\d*$/.test(String(data.submissionId)))
+        report('form-' + data.formId + '-' + data.submissionId);
+    });
+  }
+  if (cfg.trigger === 'flow_webhook' && window.fetch) {
+    var originalFetch = window.fetch;
+    window.fetch = function (input, init) {
+      var selected = false;
+      try {
+        var target = new URL(typeof input === 'string' || input instanceof URL ? String(input) : input.url, location.href);
+        selected = (cfg.apiOrigins.indexOf(target.origin) >= 0 || target.origin === new URL(location.href).origin) &&
+          (target.pathname.indexOf('/api/webhooks/flow/' + cfg.targetId + '/') === 0 ||
+            cfg.targetSlug && target.pathname.indexOf('/api/webhooks/flow/' + cfg.targetSlug + '/') === 0) &&
+          (init && init.method || input.method || 'GET').toUpperCase() === 'POST';
+        // Preserve every other request option. Never consume a Request stream.
+        if (selected && init && typeof init.body === 'string' &&
+            new Headers(init.headers).get('content-type')?.includes('application/json')) {
+          var body = JSON.parse(init.body);
+          if (body && typeof body === 'object' && !Array.isArray(body)) {
+            if (Object.keys(attribution).length) body.ad_attribution = attribution;
+            init = Object.assign({}, init, { body: JSON.stringify(body) });
+          }
+        }
+      } catch (_) {}
+      // Exactly one original request. Return the original response unmodified.
+      return originalFetch.call(this, input, init).then(function (response) {
+        if (selected && response.ok) {
+          try {
+            response.clone().json().then(function (body) {
+              if (body.success === true && body.contactId && body.flowRunId)
+                report('flow-' + cfg.targetId + '-' + body.flowRunId);
+            }).catch(function () {});
+          } catch (_) {}
+        }
+        return response;
+      });
+    };
+  }
+  if (cfg.trigger === 'page_view') {
+    var id = window.crypto && window.crypto.randomUUID ? window.crypto.randomUUID() :
+      Date.now().toString(36) + Math.random().toString(36).slice(2);
+    report('page-' + cfg.pageId + '-' + id);
+  }
+})();
+
+</script>
+
+<!-- TRACKING:HEAD END -->
 
 <script data-field-replace>
 (function(){
