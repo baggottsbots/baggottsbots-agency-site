@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/blog/is-your-website-ready-for-2027/</loc>
+    <lastmod>2026-11-11T04:17:48.624Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/book/</loc>
     <lastmod>2026-11-11T04:17:38.225Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -48,11 +53,6 @@
   <url>
     <loc>https://baggottsbots.com/blog/nfc-cards-go-wallet/</loc>
     <lastmod>2026-11-11T04:14:04.853Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/blog/is-your-website-ready-for-2027/</loc>
-    <lastmod>2026-11-11T04:14:04.199Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
