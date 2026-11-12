@@ -491,7 +491,6 @@
     @media (min-width: 1024px) { #mobile-menu { display: none !important; } }
     @media (max-width: 767px) {
       .container-wide { width: calc(100% - 40px); }
-      #booking-frame { height: 1500px !important; }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto !important; }
