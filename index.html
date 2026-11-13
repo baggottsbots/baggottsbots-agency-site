@@ -330,26 +330,6 @@
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <!-- End SEO Meta Tags -->
-<script data-lp-token-hydrate>
-(function(){try{
-  var slug="digital-marketing-agency-bluffton-sc";
-  var SITEK="";
-  var SK='lp_access_'+slug;
-  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
-  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
-  var u=new URL(location.href);var found=null;var changed=false;
-  var PINP=true;
-  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
-  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
-  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
-  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
-  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
-  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
-  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
-  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
-}catch(e){}})();
-</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 <!-- TRACKING:HEAD START (managed by Coding Agent — do not edit) -->
@@ -463,6 +443,26 @@
 </script>
 
 <!-- TRACKING:HEAD END -->
+<script data-lp-token-hydrate>
+(function(){try{
+  var slug="digital-marketing-agency-bluffton-sc";
+  var SITEK="";
+  var SK='lp_access_'+slug;
+  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
+  function siteTok(){try{return SITEK?localStorage.getItem(SITEK):null;}catch(e){return null;}}
+  var u=new URL(location.href);var found=null;var changed=false;
+  var PINP=true;
+  if(!PINP){try{localStorage.removeItem('lp_pin_'+slug);if(SITEK)localStorage.removeItem(SITEK);}catch(e){}}
+  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{if(PINP||p!=='pin_access_token'){localStorage.setItem(map[p]+slug,v);if(SITEK&&p==='pin_access_token')localStorage.setItem(SITEK,v);}}catch(e){}if(p==='pin_access_token'){try{sessionStorage.setItem('lp_fresh_'+slug,'1');}catch(e){}}u.searchParams.delete(p);changed=true;}});
+  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
+  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
+  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
+  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug)||siteTok();}catch(e){return null;}}
+  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
+  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
+  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
+}catch(e){}})();
+</script>
 
 <script data-field-replace>
 (function(){
@@ -1124,7 +1124,7 @@
         </nav>
         <div class="flex items-center gap-3"><a href="https://www.facebook.com/BaggottsBots" target="_blank" rel="noopener" aria-label="BaggottsBOTs on Facebook" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a><a href="https://www.youtube.com/@baggottsbotsdigitalmarketi9524" target="_blank" rel="noopener" aria-label="BaggottsBOTs on YouTube" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a><a href="https://x.com/baggottsbots" target="_blank" rel="noopener" aria-label="BaggottsBOTs on X" class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-white/15 text-muted transition hover:border-gold hover:text-gold"><svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></div>
       </div>
-      <div class="footer-wordmark mt-14 select-none font-display font-extrabold uppercase" aria-hidden="true">Marketing that hits different.</div>
+      <div class="footer-wordmark mt-14 select-none font-display font-extrabold uppercase" aria-hidden="true"><span class="wm-word"><span class="wm-line">Marketing</span><span class="wm-fill">Marketing</span></span><span class="wm-word"><span class="wm-line">that</span><span class="wm-fill">that</span></span><span class="wm-word"><span class="wm-line">hits</span><span class="wm-fill">hits</span></span><span class="wm-word wm-hot"><span class="wm-line">different.</span><span class="wm-fill">different.</span></span></div>
       <div class="mt-10 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-[9px] text-muted sm:flex-row">
         <p>© 2026 BaggottsBOTs Digital Marketing Agency. All rights reserved.</p>
         <p class="pr-16">Serving <a class="hover:text-gold" href="#bluffton">Bluffton</a>, <a class="hover:text-gold" href="#hilton-head">Hilton Head Island</a>, <a class="hover:text-gold" href="#beaufort">Beaufort</a>, and <a class="hover:text-gold" href="#beaufort-county">Beaufort County, SC</a>.</p>
@@ -1244,11 +1244,14 @@
           scrollTrigger: { trigger: '#about', start: 'top 70%', once: true }
         });
 
-        /* ---------- FOOTER WORDMARK DRIFT ---------- */
-        gsap.fromTo('.footer-wordmark', { xPercent: 6 }, {
-          xPercent: -12, ease: 'none',
-          scrollTrigger: { trigger: 'footer', start: 'top bottom', end: 'bottom bottom', scrub: 1 }
+        /* ---------- FOOTER WORDMARK: rises in, sketch then fill, reverses on scroll up ---------- */
+        var wmTl = gsap.timeline({
+          scrollTrigger: { trigger: '.footer-wordmark', start: 'top bottom', endTrigger: 'footer', end: 'bottom bottom', scrub: .6 }
         });
+        wmTl.fromTo('.wm-word', { yPercent: 70, autoAlpha: 0, rotation: 3 },
+                  { yPercent: 0, autoAlpha: 1, rotation: 0, ease: 'power3.out', stagger: .18, duration: .6 }, 0)
+            .fromTo('.wm-fill', { clipPath: 'inset(0 100% 0 0)' },
+                  { clipPath: 'inset(0 0% 0 0)', ease: 'none', stagger: .18, duration: .7 }, .35);
       });
 
       // Recalculate trigger positions once Tailwind, fonts, images and the form embed settle
