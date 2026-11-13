@@ -51,7 +51,12 @@
     .details-plus { transition: transform .2s; }
     .form-shell { background: transparent; border: 0; padding: 0; }
     .form-shell [data-form-frame], .form-shell iframe { width: 100%; }
-    .footer-wordmark { font-size: clamp(70px, 16.5vw, 225px); line-height: .8; letter-spacing: -.025em; color: #25251f; white-space: nowrap; }
+    .footer-wordmark { font-size: clamp(56px, 12.5vw, 180px); line-height: .9; letter-spacing: -.02em; }
+    .wm-word { position: relative; display: inline-block; margin-right: .2em; }
+    .wm-word:last-child { margin-right: 0; }
+    .wm-line { color: transparent; -webkit-text-stroke: 1.5px #4a4a42; }
+    .wm-fill { position: absolute; left: 0; top: 0; color: #f2f0e8; clip-path: inset(0 0 0 0); }
+    .wm-hot .wm-fill { background: linear-gradient(90deg, #FF00D4, #8A2BFF 60%, #2D5BFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
     /* GSAP animation helpers */
@@ -114,6 +119,15 @@
 .bb-close:focus-visible,.bb-btn:focus-visible{outline:2px solid #FF00D4;outline-offset:3px}
 .bb-home{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);width:110px;height:4px;border-radius:4px;background:#f2f0e8aa}
 @media (prefers-reduced-motion: reduce){.bb-pop,.bb-back{transition:none}}
+/* Readability: larger body copy, especially on phones */
+main .text-xs{font-size:14.5px}
+main .text-xs:not([class*="leading-"]){line-height:1.6}
+main .text-sm{font-size:15.5px}
+main .text-sm:not([class*="leading-"]){line-height:1.7}
+main .text-\[10px\]{font-size:13px}
+footer .text-xs{font-size:13px}
+.eyebrow{font-size:12px}
+@media (min-width:768px){main .text-sm{font-size:16px}}
 
 /* All rules below are scoped to #not-found so they cannot affect other pages when the sync merges styles into the shared stylesheet. */
     #not-found {
