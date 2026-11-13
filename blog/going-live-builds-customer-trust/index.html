@@ -725,5 +725,77 @@
   </footer>
   <script>(function(){var t=document.getElementById('menu-toggle'),m=document.getElementById('mobile-menu');if(!t||!m)return;function s(o){m.hidden=!o;t.setAttribute('aria-expanded',String(o));t.setAttribute('aria-label',o?'Close menu':'Open menu');}t.addEventListener('click',function(){s(m.hidden);});m.querySelectorAll('a').forEach(function(l){l.addEventListener('click',function(){s(false);});});})();</script>
   <script src="https://paymegpt.com/widget.js" data-widget="92916885" async></script>
+<!-- bb-consistency-v1 -->
+<style id="bb-consistency-v1">
+main .text-xs{font-size:14.5px}
+main .text-xs:not([class*="leading-"]){line-height:1.6}
+main .text-sm{font-size:15.5px}
+main .text-sm:not([class*="leading-"]){line-height:1.7}
+main .text-\[10px\]{font-size:13px}
+footer .text-xs{font-size:13px}
+.eyebrow{font-size:12px}
+@media (min-width:768px){main .text-sm{font-size:16px}}
+.svc .row p{font-size:15px}
+.svc-lede{font-size:15.5px}
+.svc .tiers li,.svc .feat li,.incl .check li,.tier li{font-size:15px}
+.svc .fine,.tier .ad,.jump .p{font-size:14px}
+.footer-wordmark{font-size:clamp(56px,12.5vw,180px)!important;line-height:.9!important;letter-spacing:-.02em;white-space:normal!important;color:inherit!important;margin-top:56px}
+.wm-word{position:relative;display:inline-block;margin-right:.2em}
+.wm-word:last-child{margin-right:0}
+.wm-line{color:transparent;-webkit-text-stroke:1.5px #4a4a42}
+.wm-fill{position:absolute;left:0;top:0;color:#f2f0e8;clip-path:inset(0 0 0 0)}
+.wm-hot .wm-fill{background:linear-gradient(90deg,#FF00D4,#8A2BFF 60%,#2D5BFF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.wm-anim .wm-word{will-change:transform,opacity}
+</style>
+<script id="bb-consistency-v1-js">
+(function(){
+  var wm=document.querySelector('.footer-wordmark');
+  if(!wm){
+    var box=document.querySelector('footer .container-wide');
+    if(!box)return;
+    wm=document.createElement('div');
+    wm.className='footer-wordmark select-none font-display font-extrabold uppercase';
+    wm.setAttribute('aria-hidden','true');
+    box.insertBefore(wm,box.lastElementChild);
+  }
+  var words=['Marketing','that','hits','different.'];
+  wm.innerHTML=words.map(function(w,i){return '<span class="wm-word'+(i===3?' wm-hot':'')+'"><span class="wm-line">'+w+'</span><span class="wm-fill">'+w+'</span></span>';}).join('');
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  wm.classList.add('wm-anim');
+  var ws=wm.querySelectorAll('.wm-word'),fs=wm.querySelectorAll('.wm-fill');
+  var startY=0,endY=1,cur=-1,target=0,raf=0;
+  function c(x){return x<0?0:x>1?1:x}
+  function ease(x){return 1-Math.pow(1-x,3)}
+  function measure(){
+    var vh=window.innerHeight,top=wm.getBoundingClientRect().top+window.pageYOffset;
+    var maxY=Math.max(0,document.documentElement.scrollHeight-vh);
+    startY=top-vh;endY=Math.min(maxY,top-vh*0.3);
+    if(endY-startY<80)startY=endY-80;
+  }
+  function paint(p){
+    for(var i=0;i<ws.length;i++){
+      var r=ease(c((p-i*0.15)/0.4)),f=c((p-0.3-i*0.15)/0.3);
+      ws[i].style.opacity=r;
+      ws[i].style.transform='translateY('+((1-r)*70).toFixed(2)+'%) rotate('+((1-r)*3).toFixed(2)+'deg)';
+      fs[i].style.clipPath='inset(0 '+((1-f)*100).toFixed(2)+'% 0 0)';
+    }
+  }
+  function tick(){
+    cur=cur<0?target:cur+(target-cur)*0.14;
+    if(Math.abs(target-cur)<0.001)cur=target;
+    paint(cur);
+    raf=cur!==target?requestAnimationFrame(tick):0;
+  }
+  function onScroll(){
+    target=endY<=0?1:c((window.pageYOffset-startY)/(endY-startY));
+    if(!raf)raf=requestAnimationFrame(tick);
+  }
+  measure();onScroll();
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',function(){measure();onScroll();});
+  window.addEventListener('load',function(){measure();onScroll();});
+  setTimeout(function(){measure();onScroll();},1500);
+})();
+</script>
 </body>
 </html>
