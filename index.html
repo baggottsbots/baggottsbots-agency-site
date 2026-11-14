@@ -1323,6 +1323,16 @@
 <script>
 (function(){var pop=document.getElementById('bbPop');var back=document.getElementById('bbBack');var closeBtn=document.getElementById('bbClose');var seen=false;try{seen=sessionStorage.getItem('bbPopSeen')==='1'}catch(e){}function show(){back.classList.add('bb-show');pop.classList.add('bb-show');pop.setAttribute('aria-hidden','false')}function hide(){back.classList.remove('bb-show');pop.classList.remove('bb-show');pop.setAttribute('aria-hidden','true');try{sessionStorage.setItem('bbPopSeen','1')}catch(e){}}if(!seen)setTimeout(show,7000);closeBtn.addEventListener('click',hide);back.addEventListener('click',hide);document.addEventListener('keydown',function(e){if(e.key==='Escape'&&pop.classList.contains('bb-show'))hide()});pop.querySelectorAll('a').forEach(function(a){a.addEventListener('click',hide)})})();
 </script>
+<style id="bb-home-hero-guard">
+/* Keep inner-page hero rules from the shared stylesheet off the home hero */
+@media (max-width:767px){
+  main > section#home{padding-top:0;padding-bottom:0}
+  main > section#home h1{font-size:77px}
+}
+@media (min-width:640px) and (max-width:767px){
+  main > section#home h1{font-size:100px}
+}
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({ once: true, duration: 700, offset: 80 });
