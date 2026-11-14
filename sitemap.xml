@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/services/</loc>
+    <lastmod>2026-11-14T14:48:17.042Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/contact/</loc>
     <lastmod>2026-11-14T14:48:02.662Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -53,11 +58,6 @@
   <url>
     <loc>https://baggottsbots.com/</loc>
     <lastmod>2026-11-14T14:46:13.135Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/</loc>
-    <lastmod>2026-11-14T14:45:44.492Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
