@@ -1333,6 +1333,10 @@
   main > section#home h1{font-size:100px}
 }
 </style>
+<style id="bb-home-wordmark-guard">
+/* Keep other pages' footer-wordmark rules in the shared stylesheet from forcing one long line */
+.footer-wordmark{font-size:clamp(56px,12.5vw,180px)!important;line-height:.9!important;letter-spacing:-.02em!important;white-space:normal!important;color:inherit!important}
+</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({ once: true, duration: 700, offset: 80 });
