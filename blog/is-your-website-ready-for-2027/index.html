@@ -520,7 +520,7 @@ footer .text-xs{font-size:13px}
   }
   function paint(p){
     for(var i=0;i<ws.length;i++){
-      var r=ease(c((p-i*0.15)/0.4)),f=c((p-0.3-i*0.15)/0.3);
+      var r=ease(c((p-i*0.13)/0.4)),f=c((p-0.22-i*0.13)/0.3);
       ws[i].style.opacity=r;
       ws[i].style.transform='translateY('+((1-r)*70).toFixed(2)+'%) rotate('+((1-r)*3).toFixed(2)+'deg)';
       fs[i].style.clipPath='inset(0 '+((1-f)*100).toFixed(2)+'% 0 0)';
@@ -533,7 +533,7 @@ footer .text-xs{font-size:13px}
     raf=cur!==target?requestAnimationFrame(tick):0;
   }
   function onScroll(){
-    target=endY<=0?1:c((window.pageYOffset-startY)/(endY-startY));
+    var y=window.pageYOffset,mx=document.documentElement.scrollHeight-window.innerHeight;target=(endY<=0||y>=mx-4)?1:c((y-startY)/(endY-startY));
     if(!raf)raf=requestAnimationFrame(tick);
   }
   measure();onScroll();
