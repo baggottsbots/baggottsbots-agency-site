@@ -1246,7 +1246,7 @@
 
         /* ---------- FOOTER WORDMARK: rises in, sketch then fill, reverses on scroll up ---------- */
         var wmTl = gsap.timeline({
-          scrollTrigger: { trigger: '.footer-wordmark', start: 'top bottom', endTrigger: 'footer', end: 'bottom bottom', scrub: .6 }
+          scrollTrigger: { trigger: '.footer-wordmark', start: 'top bottom', end: function () { var w = document.querySelector('.footer-wordmark'); var avail = document.documentElement.scrollHeight - (w.getBoundingClientRect().top + window.pageYOffset); return '+=' + Math.max(80, Math.round(avail * 0.55)); }, invalidateOnRefresh: true, scrub: .6 }
         });
         wmTl.fromTo('.wm-word', { yPercent: 70, autoAlpha: 0, rotation: 3 },
                   { yPercent: 0, autoAlpha: 1, rotation: 0, ease: 'power3.out', stagger: .18, duration: .6 }, 0)
