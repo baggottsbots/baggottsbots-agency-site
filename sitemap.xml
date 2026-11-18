@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/</loc>
+    <lastmod>2026-11-18T02:29:01.757Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/blog/digital-marketing-agency-cost-bluffton-sc/</loc>
     <lastmod>2026-11-18T02:28:42.701Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -98,11 +103,6 @@
   <url>
     <loc>https://baggottsbots.com/services/</loc>
     <lastmod>2026-11-18T02:24:43.171Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/</loc>
-    <lastmod>2026-11-18T02:24:41.318Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
