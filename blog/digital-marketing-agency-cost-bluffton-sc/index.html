@@ -88,6 +88,12 @@
     } } };
   </script>
   
+  <style id="bb-button-text-guard">
+/* Keep button text readable everywhere: blog link rules must never recolor buttons */
+.article a.btn, .article a.btn:visited, .svcpage a.btn, .svcpage a.btn:visited { color: #f2f0e8; text-decoration: none; }
+.article a.btn-gold:hover, .svcpage a.btn-gold:hover { color: #f2f0e8; text-decoration: none; }
+.article a.btn:not(.btn-gold):hover, .svcpage a.btn:not(.btn-gold):hover { color: #FF00D4; text-decoration: none; }
+</style>
 
 <!-- SEO Meta Tags -->
 <title>Digital Marketing Agency Cost in Bluffton, SC (2026)</title>
