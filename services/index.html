@@ -30,180 +30,119 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebPage",
-        "@id": "https://baggottsbots.com/services/#webpage",
-        "url": "https://baggottsbots.com/services/",
-        "name": "Services & Pricing | BaggottsBOTs Digital Marketing Agency",
-        "description": "Digital marketing services and starting prices from BaggottsBOTs Digital Marketing Agency in Bluffton, South Carolina.",
-        "inLanguage": "en-US",
-        "isPartOf": { "@id": "https://baggottsbots.com/#website" },
-        "about": { "@id": "https://baggottsbots.com/#business" },
-        "breadcrumb": { "@id": "https://baggottsbots.com/services/#breadcrumb" },
-        "mainEntity": { "@id": "https://baggottsbots.com/services/#catalog" }
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://baggottsbots.com/services/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://baggottsbots.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Services & Pricing", "item": "https://baggottsbots.com/services/" }
-        ]
-      },
-      {
-        "@type": "AdministrativeArea",
-        "@id": "https://baggottsbots.com/#area",
-        "name": "Beaufort County, South Carolina",
-        "containsPlace": [
+        "@type": "ProfessionalService",
+        "@id": "https://baggottsbots.com/#business",
+        "name": "BaggottsBOTs Digital Marketing Agency",
+        "url": "https://baggottsbots.com/",
+        "telephone": "+1-843-505-1657",
+        "areaServed": [
           { "@type": "City", "name": "Bluffton, SC" },
           { "@type": "City", "name": "Hilton Head Island, SC" },
           { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
-        "@type": "OfferCatalog",
-        "@id": "https://baggottsbots.com/services/#catalog",
-        "name": "BaggottsBOTs digital marketing services and pricing",
-        "url": "https://baggottsbots.com/services/",
-        "numberOfItems": 9,
+        "@type": "BreadcrumbList",
+        "@id": "https://baggottsbots.com/services/#breadcrumb",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "item": { "@id": "https://baggottsbots.com/services/#all-in" } },
-          { "@type": "ListItem", "position": 2, "item": { "@id": "https://baggottsbots.com/services/#websites" } },
-          { "@type": "ListItem", "position": 3, "item": { "@id": "https://baggottsbots.com/services/#social-media" } },
-          { "@type": "ListItem", "position": 4, "item": { "@id": "https://baggottsbots.com/services/#google-ads" } },
-          { "@type": "ListItem", "position": 5, "item": { "@id": "https://baggottsbots.com/services/#content-creation" } },
-          { "@type": "ListItem", "position": 6, "item": { "@id": "https://baggottsbots.com/services/#ai-training" } },
-          { "@type": "ListItem", "position": 7, "item": { "@id": "https://baggottsbots.com/services/#ai-agents" } },
-          { "@type": "ListItem", "position": 8, "item": { "@id": "https://baggottsbots.com/services/#email-marketing" } },
-          { "@type": "ListItem", "position": 9, "item": { "@id": "https://baggottsbots.com/services/#custom-software" } }
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://baggottsbots.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://baggottsbots.com/services/" }
         ]
       },
       {
         "@type": "Service",
-        "@id": "https://baggottsbots.com/services/#all-in",
-        "name": "The All-In",
-        "serviceType": "Full-service digital marketing",
-        "url": "https://baggottsbots.com/services/#all-in",
-        "description": "Our recommended full-service plan: managed website with blogging and SEO, top-level social media, a monthly content shoot, email marketing, a managed omnichannel AI agent, ads management, and a customized, fully branded real-time reporting dashboard you can also use through ChatGPT, Claude or Grok for instant insights and other actions.",
-        "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": { "@type": "Offer", "name": "The All-In", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 3997, "unitCode": "MON" } }
-      },
-      {
-        "@type": "Service",
         "@id": "https://baggottsbots.com/services/#websites",
-        "name": "Websites, SEO and AI-Powered",
-        "serviceType": "Website design and SEO",
-        "url": "https://baggottsbots.com/services/#websites",
-        "description": "SEO and AI-powered websites for local businesses, from an affordable small business website to larger and more complex custom builds, with self-manage on SuperStack OS or fully managed options. Pairs best with ongoing blogging and SEO.",
+        "name": "Website design & SEO",
+        "description": "Fast, search-ready websites built on SuperStack OS, our own AI Business OS.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "Small business website (one-time)", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 750, "maxPrice": 1997 } },
-          { "@type": "Offer", "name": "Larger or custom website (one-time)", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 1997 } },
-          { "@type": "Offer", "name": "Self-manage on SuperStack OS", "url": "https://superstackos.com/", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "price": 79, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Website management add-on", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 297, "maxPrice": 597, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Ongoing blogging and SEO add-on", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 99, "maxPrice": 499, "unitCode": "MON" } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#social-media",
-        "name": "Social Media Management",
-        "serviceType": "Social media management and lead generation",
-        "url": "https://baggottsbots.com/services/#social-media",
-        "description": "ROI-focused social media management with content included, comment-to-customer lead generation and email list signups. Ad spend is required and billed separately, with a $500 per month minimum.",
+        "name": "Social media management",
+        "description": "Content is always included, plus comment-to-customer and email list signup lead generation.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "Launch: 8 posts, 2 videos", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 1250, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Growth: 12 to 16 posts, 4 videos, 1 shoot", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 1997, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Dominance: 20+ posts, 8 pieces, 2 shoots", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 2997, "unitCode": "MON" } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#google-ads",
-        "name": "Google Ads Management",
-        "serviceType": "Google Ads and paid search management",
-        "url": "https://baggottsbots.com/services/#google-ads",
-        "description": "Google Ads campaigns built, managed and optimized so local businesses show up the moment customers search. Ad spend is separate from the management fee, and pricing is scoped on the free strategy call.",
+        "name": "Google Ads management",
+        "description": "Campaign setup, keywords, ad copy, tracking, and ongoing optimization, all handled by us and built around your budget and goals.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
+        ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#content-creation",
-        "name": "Content Creation",
-        "serviceType": "Video production, photography and design",
-        "url": "https://baggottsbots.com/services/#content-creation",
-        "description": "Video, photo and design content we shoot and produce, with each piece tailored to the channel it runs on and built to convert. Available standalone or as extra volume.",
+        "name": "Video production & content creation",
+        "description": "Filmed and edited by us, with every piece tailored to the channel it runs on and built to convert.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "Short-form video we shoot (each)", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 500, "maxPrice": 950 } },
-          { "@type": "Offer", "name": "Photo session", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 500, "maxPrice": 950 } },
-          { "@type": "Offer", "name": "Brand story or promo video", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 2500, "maxPrice": 7000 } },
-          { "@type": "Offer", "name": "Monthly content batch", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 1497, "maxPrice": 2497, "unitCode": "MON" } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#ai-training",
-        "name": "AI Training and Workshops",
-        "serviceType": "AI training for businesses and teams",
-        "url": "https://baggottsbots.com/services/#ai-training",
-        "description": "AI training and hands-on workshops for business owners and teams, built around the best AI tools for each business, from a 2-hour intro to a full-day intensive, plus recurring visits. Teams can also get set up on SuperStack OS, by subscription or white label.",
+        "name": "AI training & workshops",
+        "description": "Practical AI training from Ryan Baggott, the Chatbot King.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "2-hour intro", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 997 } },
-          { "@type": "Offer", "name": "4-hour hands-on workshop", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 1997 } },
-          { "@type": "Offer", "name": "Full-day intensive", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 3497 } },
-          { "@type": "Offer", "name": "Recurring visits (per visit)", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 750, "maxPrice": 1250 } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#ai-agents",
-        "name": "Custom AI Agents",
-        "serviceType": "Omnichannel AI agents and chatbots for SMS, social, web chat and phone",
-        "url": "https://baggottsbots.com/services/#ai-agents",
-        "description": "One custom omnichannel AI agent across SMS, Facebook, Instagram, X, Telegram and web chat, running on our own software. Every agent includes human handoff and instant lead alerts for speed to lead, comment-to-customer DM and lead capture on Facebook and Instagram, plus flows and automations. The top tier adds an AI phone line with call recording, AI call analysis, call summaries and grades, and a private dashboard with AI-powered business recommendations.",
+        "name": "Custom AI agents & chatbots",
+        "description": "Every agent we build is omnichannel: one agent answering across SMS, Facebook, Instagram, X, Telegram, and web chat, all running on our own software.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "Omnichannel agent", "priceSpecification": [ { "@type": "PriceSpecification", "name": "Setup", "priceCurrency": "USD", "minPrice": 997 }, { "@type": "UnitPriceSpecification", "name": "Monthly", "priceCurrency": "USD", "minPrice": 197, "unitCode": "MON" } ] },
-          { "@type": "Offer", "name": "Omnichannel Plus", "priceSpecification": [ { "@type": "PriceSpecification", "name": "Setup", "priceCurrency": "USD", "minPrice": 1997 }, { "@type": "UnitPriceSpecification", "name": "Monthly", "priceCurrency": "USD", "minPrice": 397, "unitCode": "MON" } ] },
-          { "@type": "Offer", "name": "Omnichannel plus Phone Intelligence", "priceSpecification": [ { "@type": "PriceSpecification", "name": "Setup", "priceCurrency": "USD", "minPrice": 2497 }, { "@type": "UnitPriceSpecification", "name": "Monthly", "priceCurrency": "USD", "minPrice": 497, "unitCode": "MON" } ] }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#email-marketing",
-        "name": "Email Marketing",
-        "serviceType": "Email marketing campaigns and automation",
-        "url": "https://baggottsbots.com/services/#email-marketing",
-        "description": "Email campaigns, blasts and automations run on our own tools.",
+        "name": "Email marketing",
+        "description": "Stay in front of the customers you already earned, with campaigns and automations run on our own software.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "areaServed": { "@id": "https://baggottsbots.com/#area" },
-        "offers": [
-          { "@type": "Offer", "name": "Campaigns and blasts", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 500, "maxPrice": 750, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Campaigns plus automations", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 997, "maxPrice": 1497, "unitCode": "MON" } },
-          { "@type": "Offer", "name": "Add-on for existing clients", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 397, "unitCode": "MON" } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
         "@type": "Service",
         "@id": "https://baggottsbots.com/services/#custom-software",
-        "name": "Custom Software Development",
-        "serviceType": "Custom software development",
-        "url": "https://baggottsbots.com/services/#custom-software",
-        "description": "Custom software builds with paid discovery credited toward the build, plus support and hosting after launch.",
+        "name": "Custom software development",
+        "description": "We have built our own software platforms.",
         "provider": { "@id": "https://baggottsbots.com/#business" },
-        "offers": [
-          { "@type": "Offer", "name": "Discovery, credited toward the build", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "price": 2500 } },
-          { "@type": "Offer", "name": "Custom software build", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD", "minPrice": 25000 } },
-          { "@type": "Offer", "name": "Support and hosting after launch", "priceSpecification": { "@type": "UnitPriceSpecification", "priceCurrency": "USD", "minPrice": 1500, "unitCode": "MON" } }
+        "areaServed": [
+          { "@type": "City", "name": "Bluffton, SC" },
+          { "@type": "City", "name": "Hilton Head Island, SC" },
+          { "@type": "City", "name": "Beaufort, SC" }
         ]
       },
       {
@@ -232,17 +171,17 @@
   
 
 <!-- SEO Meta Tags -->
-<title>Services &amp; Pricing | BaggottsBOTs Digital Marketing Agency</title>
+<title>Marketing Services &amp; Pricing in Bluffton, SC | BaggottsBOTs</title>
 <meta name="description" content="Websites, social media, content, AI agents, email, AI training and custom software for Bluffton, Beaufort and Hilton Head Island businesses, with starting prices listed." />
 <meta name="keywords" content="digital marketing services Bluffton SC" />
-<meta property="og:title" content="Services &amp; Pricing | BaggottsBOTs Digital Marketing Agency" />
+<meta property="og:title" content="Marketing Services &amp; Pricing in Bluffton, SC | BaggottsBOTs" />
 <meta property="og:description" content="Websites, social media, content, AI agents, email, AI training and custom software for Bluffton, Beaufort and Hilton Head Island businesses, with starting prices listed." />
-<meta property="og:image" content="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1794547549383_blob.jpeg" />
+<meta property="og:image" content="https://paymegpt.com/objects/quick-uploads/2/817ef3ef7a1ea727.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Services &amp; Pricing | BaggottsBOTs Digital Marketing Agency" />
+<meta name="twitter:title" content="Marketing Services &amp; Pricing in Bluffton, SC | BaggottsBOTs" />
 <meta name="twitter:description" content="Websites, social media, content, AI agents, email, AI training and custom software for Bluffton, Beaufort and Hilton Head Island businesses, with starting prices listed." />
-<meta name="twitter:image" content="https://paymegpt.com/api/landing-pages/images/landing-page-images%2F0%2F1794547549383_blob.jpeg" />
+<meta name="twitter:image" content="https://paymegpt.com/objects/quick-uploads/2/817ef3ef7a1ea727.jpg" />
 <link rel="icon" type="image/x-icon" sizes="16x16 32x32 48x48" href="/favicon.ico" />
 <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -572,8 +511,7 @@
     <section data-section="hero" class="noise relative overflow-hidden pb-16 pt-20 md:pb-20 md:pt-28" style="background: radial-gradient(ellipse at top right, #8A2BFF22, transparent 60%), radial-gradient(ellipse at bottom left, #2D5BFF1f, transparent 60%);">
       <div class="container-wide">
         <nav aria-label="Breadcrumb" class="mb-6 text-[11px] text-muted"><a class="hover:text-gold" href="https://baggottsbots.com/">Home</a> <span aria-hidden="true">/</span> <span class="text-cream">Services &amp; Pricing</span></nav>
-        <div class="eyebrow mb-6 flex items-center gap-3 text-gold"><span class="h-px w-7 bg-gold"></span>Digital marketing services in Bluffton, SC</div>
-        <h1 class="display text-[72px] sm:text-[96px] lg:text-[112px]">Services &amp; <span class="text-gold">pricing.</span><br>No guesswork.</h1>
+        <h1 class="display text-[72px] sm:text-[96px] lg:text-[112px]"><span class="eyebrow mb-6 flex items-center gap-3 text-gold" style="display:flex;font-family:'DM Sans',sans-serif;line-height:1.5;letter-spacing:.2em;font-size:12px;font-weight:700;margin-bottom:24px"><span class="h-px w-7 bg-gold"></span>Digital marketing services in Bluffton, SC</span>Services &amp; <span class="text-gold">pricing.</span><br>No guesswork.</h1>
         <p class="mt-7 max-w-[620px] text-sm leading-[1.85] text-muted md:text-[15px]">BaggottsBOTs Digital Marketing Agency builds websites, social media, Google Ads, content, AI agents, email, and custom software for businesses in Bluffton, Beaufort County, and Hilton Head Island. Here is what we do and what it typically costs, so you know before you call.</p>
         <div class="mt-9 flex flex-wrap gap-3">
           <a href="https://baggottsbots.com/book/" class="btn btn-gold">Book my free strategy call</a>
@@ -619,12 +557,12 @@
         <p class="eyebrow mb-4 text-gold">Or pick a single service</p>
         <h2 id="h-list" class="display mb-8 text-5xl md:text-6xl">Eight services. <span class="text-gold">Tap to jump.</span></h2>
         <ol class="jump">
-          <li><a href="#websites"><span class="n">01</span><span class="t">Websites</span><span class="p">from $750</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
+          <li><a href="#websites"><span class="n">01</span><span class="t">Website design &amp; SEO</span><span class="p">from $750</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
           <li><a href="#social-media"><span class="n">02</span><span class="t">Social media management</span><span class="p">from $1,250/mo</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
-          <li><a href="#google-ads"><span class="n">03</span><span class="t">Google Ads</span><span class="p">custom quote</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
-          <li><a href="#content-creation"><span class="n">04</span><span class="t">Content creation</span><span class="p">from $500</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
+          <li><a href="#google-ads"><span class="n">03</span><span class="t">Google Ads management</span><span class="p">custom quote</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
+          <li><a href="#content-creation"><span class="n">04</span><span class="t">Video production &amp; content creation</span><span class="p">from $500</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
           <li><a href="#ai-training"><span class="n">05</span><span class="t">AI training &amp; workshops</span><span class="p">from $997</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
-          <li><a href="#ai-agents"><span class="n">06</span><span class="t">Custom AI agents</span><span class="p">from $997 setup</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
+          <li><a href="#ai-agents"><span class="n">06</span><span class="t">Custom AI agents &amp; chatbots</span><span class="p">from $997 setup</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
           <li><a href="#email-marketing"><span class="n">07</span><span class="t">Email marketing</span><span class="p">from $500/mo</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
           <li><a href="#custom-software"><span class="n">08</span><span class="t">Custom software</span><span class="p">from $25,000</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a></li>
         </ol>
@@ -637,9 +575,10 @@
         <div class="svc-grid">
           <div class="svc-intro" data-aos="fade-up">
             <p class="svc-num">01 / 08</p>
-            <h2 id="h-websites">Websites</h2>
+            <h2 id="h-websites">Website design &amp; SEO</h2>
             <p class="svc-sub">SEO &amp; AI-powered</p>
             <p class="svc-lede">Fast, search-ready websites built on <a class="inline-link" href="https://superstackos.com/" target="_blank" rel="noopener">SuperStack OS</a>, our own AI Business OS. Run it yourself, or hand us the keys and we manage it for you. For best results, pair your site with <a class="inline-link" href="#blogging-seo">ongoing blogging and SEO</a>.</p>
+            <a href="https://baggottsbots.com/services/website-design/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full website design details →</a>
           </div>
           <div class="rows" data-aos="fade-up" data-aos-delay="100">
             <div class="row"><div><h3>Small business website</h3><p>A fantastic, affordable option for the majority of small businesses. You get a professional, fast, search-ready site that makes you look great and turns visitors into calls and customers, with everything they need in one clean, easy-to-scroll place.</p></div><div class="price">$750 to $1,997<small>One-time</small></div></div>
@@ -663,6 +602,7 @@
             <h2 id="h-social">Social media management</h2>
             <p class="svc-sub">Built for ROI and lead gen</p>
             <p class="svc-lede" style="max-width:720px">Content is always included, plus comment-to-customer and email list signup lead generation. Tiers vary by how much content and creative you need.</p>
+            <a href="https://baggottsbots.com/services/social-media-management/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full social media management details →</a>
           </div>
           <div>
             <div class="tier-grid">
@@ -694,9 +634,10 @@
         <div class="svc-grid">
           <div class="svc-intro" data-aos="fade-up">
             <p class="svc-num">03 / 08</p>
-            <h2 id="h-gads">Google Ads</h2>
+            <h2 id="h-gads">Google Ads management</h2>
             <p class="svc-sub">Show up when they search</p>
             <p class="svc-lede">Social ads create demand. Google Ads catch people the moment they search for what you sell. We build, manage, and tune the campaigns so the clicks turn into calls and leads.</p>
+            <a href="https://baggottsbots.com/services/google-ads-management/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full Google Ads management details →</a>
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
             <div class="rows">
@@ -711,9 +652,10 @@
         <div class="svc-grid">
           <div class="svc-intro" data-aos="fade-up">
             <p class="svc-num">04 / 08</p>
-            <h2 id="h-content">Content creation</h2>
+            <h2 id="h-content">Video production &amp; content creation</h2>
             <p class="svc-sub">Video, photo, design</p>
             <p class="svc-lede">Book it standalone or add extra volume to a plan. We shoot what we edit, so we don't take edit-only jobs on other people's footage.</p>
+            <a href="https://baggottsbots.com/services/video-production/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full video production details →</a>
           </div>
           <div class="rows" data-aos="fade-up" data-aos-delay="100">
             <div class="row"><div><h3>Short-form video we shoot</h3><p>Filmed and edited by us, with every piece tailored to the channel it runs on and built to convert. What works on Instagram isn't what works on Facebook or TikTok, so each one is cut for where it's going and what you want the viewer to do next.</p></div><div class="price">$500 to $950<small>Each</small></div></div>
@@ -731,6 +673,7 @@
             <h2 id="h-training">AI training &amp; workshops</h2>
             <p class="svc-sub">For owners and teams</p>
             <p class="svc-lede">Practical AI training from Ryan Baggott, the Chatbot King. Every session is built around your business, so your team learns the best AI tech for how you actually work, whether that's ChatGPT, Claude, Grok, or your own AI agents. Pick a single session or keep us coming back as your team levels up.</p>
+            <a href="https://baggottsbots.com/services/ai-training-workshops/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full AI training details →</a>
           </div>
           <div class="rows" data-aos="fade-up" data-aos-delay="100">
             <div class="row"><div><h3>2-hour intro</h3><p>The fastest way to get your team started with AI.</p></div><div class="price"><span class="from">From</span>$997</div></div>
@@ -746,9 +689,10 @@
         <div class="svc-grid">
           <div class="svc-intro" data-aos="fade-up">
             <p class="svc-num">06 / 08</p>
-            <h2 id="h-agents">Custom AI agents</h2>
+            <h2 id="h-agents">Custom AI agents &amp; chatbots</h2>
             <p class="svc-sub">One agent, every channel</p>
             <p class="svc-lede">Every agent we build is omnichannel: one agent answering across SMS, Facebook, Instagram, X, Telegram, and web chat, all running on our own software. Add the phone line and it helps your business get better with every call.</p>
+            <a href="https://baggottsbots.com/services/ai-agents-chatbots/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full AI agent details →</a>
           </div>
           <div data-aos="fade-up" data-aos-delay="100">
             <div class="incl">
@@ -783,6 +727,7 @@
             <h2 id="h-email">Email marketing</h2>
             <p class="svc-sub">Run on our own tools</p>
             <p class="svc-lede">Stay in front of the customers you already earned, with campaigns and automations run on our own software.</p>
+            <a href="https://baggottsbots.com/services/email-marketing/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full email marketing details →</a>
           </div>
           <div class="rows" data-aos="fade-up" data-aos-delay="100">
             <div class="row"><div><h3>Campaigns / blasts</h3><p>Regular email campaigns to your list.</p></div><div class="price">$500 to $750<span class="per">/mo</span><small>Monthly</small></div></div>
@@ -799,6 +744,7 @@
             <h2 id="h-software">Custom software development</h2>
             <p class="svc-sub">Built by platform builders</p>
             <p class="svc-lede">We have built our own software platforms. When an off-the-shelf tool won't do the job, we build yours.</p>
+            <a href="https://baggottsbots.com/services/custom-software-development/" style="display:inline-block;margin:10px 0 18px;font-size:13px;font-weight:700;color:#FF00D4">Full custom software details →</a>
           </div>
           <div class="rows" data-aos="fade-up" data-aos-delay="100">
             <div class="row"><div><h3>Discovery</h3><p>We scope the build first. The fee is credited toward the build.</p></div><div class="price">$2,500<small>Credited toward build</small></div></div>
