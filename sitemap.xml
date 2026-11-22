@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/services/custom-software-development/</loc>
+    <lastmod>2026-11-22T04:14:45.522Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/services/ai-training-workshops/</loc>
     <lastmod>2026-11-22T04:14:27.164Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -103,11 +108,6 @@
   <url>
     <loc>https://baggottsbots.com/blog/is-your-website-ready-for-2027/</loc>
     <lastmod>2026-11-22T04:09:12.428Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/custom-software-development/</loc>
-    <lastmod>2026-11-22T04:09:11.590Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
