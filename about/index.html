@@ -874,5 +874,6 @@ footer .text-xs{font-size:13px}
   setTimeout(function(){measure();onScroll();},1500);
 })();
 </script>
+<script>(function(){var w=document.querySelector('.footer-wordmark');if(!w)return;var rm=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;if(rm||!('IntersectionObserver' in window))return;w.classList.add('wm-js');var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){w.classList.add('wm-go');io.disconnect();}},{threshold:.35});io.observe(w);})();</script>
 </body>
 </html>
