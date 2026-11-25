@@ -1,6 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/services/</loc>
+    <lastmod>2026-11-25T20:56:21.335Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/</loc>
+    <lastmod>2026-11-25T20:55:46.678Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/contact/</loc>
+    <lastmod>2026-11-25T20:55:24.867Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/about/</loc>
+    <lastmod>2026-11-25T20:55:23.092Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/ai-training-workshops/</loc>
+    <lastmod>2026-11-25T19:52:30.435Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/ai-agents-chatbots/</loc>
+    <lastmod>2026-11-25T18:11:27.219Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/pricing/</loc>
+    <lastmod>2026-11-25T18:11:10.233Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/custom-software-development/</loc>
+    <lastmod>2026-11-25T18:11:04.824Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/email-marketing/</loc>
+    <lastmod>2026-11-25T18:10:32.315Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/google-ads-management/</loc>
+    <lastmod>2026-11-25T18:10:29.429Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/social-media-management/</loc>
+    <lastmod>2026-11-25T18:10:25.831Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/website-design/</loc>
+    <lastmod>2026-11-25T18:10:22.922Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://baggottsbots.com/services/video-production/</loc>
+    <lastmod>2026-11-25T18:07:59.256Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/explainer-video-skill/</loc>
     <lastmod>2026-11-24T13:31:46.383Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -18,11 +83,6 @@
   <url>
     <loc>https://baggottsbots.com/blog/wallet-push-notifications-geofencing-bluffton-sc/</loc>
     <lastmod>2026-11-24T03:47:11.620Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/</loc>
-    <lastmod>2026-11-24T02:56:04.094Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
@@ -61,68 +121,8 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://baggottsbots.com/services/custom-software-development/</loc>
-    <lastmod>2026-11-22T04:14:45.522Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/ai-training-workshops/</loc>
-    <lastmod>2026-11-22T04:14:27.164Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/ai-agents-chatbots/</loc>
-    <lastmod>2026-11-22T04:14:08.351Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/email-marketing/</loc>
-    <lastmod>2026-11-22T04:13:44.140Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/video-production/</loc>
-    <lastmod>2026-11-22T04:13:32.242Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/google-ads-management/</loc>
-    <lastmod>2026-11-22T04:13:22.448Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/social-media-management/</loc>
-    <lastmod>2026-11-22T04:13:11.898Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/website-design/</loc>
-    <lastmod>2026-11-22T04:12:55.570Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
     <loc>https://baggottsbots.com/book/</loc>
     <lastmod>2026-11-22T04:12:42.397Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/about/</loc>
-    <lastmod>2026-11-22T04:12:21.970Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/contact/</loc>
-    <lastmod>2026-11-22T04:11:33.152Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/</loc>
-    <lastmod>2026-11-22T04:11:23.608Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/pricing/</loc>
-    <lastmod>2026-11-22T04:11:01.649Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
