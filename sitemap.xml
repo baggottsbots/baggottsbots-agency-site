@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://baggottsbots.com/services/ai-agents-chatbots/</loc>
+    <lastmod>2026-11-25T20:58:27.420Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
     <loc>https://baggottsbots.com/services/email-marketing/</loc>
     <lastmod>2026-11-25T20:58:17.684Z</lastmod>
     <changefreq>weekly</changefreq>
@@ -43,11 +48,6 @@
   <url>
     <loc>https://baggottsbots.com/services/ai-training-workshops/</loc>
     <lastmod>2026-11-25T19:52:30.435Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://baggottsbots.com/services/ai-agents-chatbots/</loc>
-    <lastmod>2026-11-25T18:11:27.219Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
